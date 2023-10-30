@@ -1,3 +1,19 @@
 .main-header {
   background: linear-gradient(90deg, #1c3477 0%, #1c3477 0.01%, #1a3578 39.11%, #73184b 75.5%, #b4022a 100%);
 }
+
+.main-header__container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-header__link {
+  padding: 30px 0;
+  color: #ffffff;
+  text-align: right;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 26px;
+}

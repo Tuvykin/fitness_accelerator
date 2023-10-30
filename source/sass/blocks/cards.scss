@@ -1,0 +1,40 @@
+.cards {
+  gap: 40px;
+}
+
+.cards__item {
+  padding: 65px 77px 65px 78px;
+  text-align: center;
+  position: relative;
+}
+
+.cards__title {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 26px;
+  margin-bottom: 11px;
+}
+
+.cards__description {
+  margin: 0;
+  font-weight: 300;
+  margin-bottom: 12px;
+}
+
+.cards__text {
+  color: #e8e8e8;
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 150px;
+  opacity: 0.48;
+}
+
+.cards__price {
+  color: #103aae;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 90px;
+  display: block;
+  position: absolute;
+}

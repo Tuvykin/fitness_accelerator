@@ -13,48 +13,172 @@
 <body>
   <div class="wrapper">
     <header class="main-header">
-      <div class="container">
-        <nav class="main-nav">
-          <a class="main-nav__link">
-            <img src="img/svg/icon-supergym.svg" alt="Логотип SUPERGYM" width="120" height="23">
-          </a>
-          <a class="main-nav__link" href="tel:+78005555555">
-            <span class="main-nav__phone">8-800-555-55-55</span>
-          </a>
-        </nav>
+      <div class="main-header__container container">
+        <a class="main-header__link">
+          <img src="img/svg/icon-supergym.svg" alt="Логотип SUPERGYM" width="120" height="23">
+        </a>
+        <a class="main-header__link" href="tel:+78005555555">8-800-555-55-55</a>
       </div>
     </header>
     <main>
       <section class="hero">
-        <div class="container">
-          <div class="hero__wrapper">
-            <div class="hero__wrapper-description">
-              <ul class="hero__list">
-                <li class="hero__item">Тренажёрный зал</li>
-                <li class="hero__item">Групповые занятия</li>
-                <li class="hero__item">Кардио-зона</li>
-              </ul>
-              <div class="hero__wrapper-text">
-                <div class="hero__wrapper-group">
-                  <h1 class="hero__title">Фитнес центр</h1>
-                  <h2 class="visually-hidden">Информация о нас</h2>
-                  <h3 class="hero__subtitle">Омск</h3>
-                </div>
-                <button class="hero__button" type="button">Купить абонемент</button>
+        <div class="hero__container container">
+          <div class="hero__wrapper-description">
+            <ul class="hero__list">
+              <li class="hero__item">Тренажёрный зал</li>
+              <li class="hero__item">Групповые занятия</li>
+              <li class="hero__item">Кардио-зона</li>
+            </ul>
+            <div class="hero__wrapper">
+              <div class="hero__wrapper-group-title">
+                <h1 class="hero__title">Фитнес центр</h1>
+                <h2 class="hero__subtitle">Омск</h2>
               </div>
+              <a class="hero__button" href="#">Купить абонемент</a>
             </div>
-            <div class="hero__container-image">
+          </div>
+          <div class="hero__container-image">
+            <picture>
+              <source type="image/webp" media="(max-width: 1365px)"
+                srcset="img/hero-tablet1x.webp 1x, img/hero-tablet2x.webp 2x">
+              <source type="image/webp" srcset="img/hero1x.webp 1x, img/hero2x.webp 2x">
+              <source media="(max-width: 1365px)" srcset="img/hero-tablet1x.jpg 1x, img/hero-tablet2x.jpg 2x"
+                width="324" height="390">
+              <img src="img/hero1x.jpg" srcset="img/hero2x.jpg 2x" loading="lazy" alt="Мужчина в футболке супермена"
+                width="500" height="524">
+            </picture>
+          </div>
+        </div>
+      </section>
+      <section class="gym">
+        <div class="gym__container container">
+          <div class="gym__text-content">
+            <h2>Тренажерный зал</h2>
+            <h3>Просторный зал площадью 900 кв/м</h3>
+            <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья.
+              Тренажерный
+              зал
+              оснащен всем необходимым современным оборудованием для всех спортсменов.
+            </p>
+            <p>
+              В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть
+              несколько
+              оборудованных залов для различных видов групповых занятий.
+            </p>
+          </div>
+          <div class="gym__container-image">
+            <picture>
+              <source type="image/webp" media="(max-width: 767px)"
+                srcset="img/gym-mobile1x.webp 1x, img/gym-mobile2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1365px)"
+                srcset="img/gym-tablet1x.webp 1x, img/gym-tablet2x.webp 2x">
+              <source type="image/webp" srcset="img/gym1x.webp 1x, img/gym2x.webp 2x">
+              <source media="(max-width: 767px)" srcset="img/gym-mobile1x.jpg 1x, img/gym-mobile2x.jpg 2x" width="320"
+                height="313">
+              <source media="(max-width: 1365px)" srcset="img/gym-tablet1x.jpg 1x, img/gym-tablet2x.jpg 2x" width="678"
+                height="345">
+              <img src="img/gym1x.jpg" srcset="img/gym2x.jpg 2x" loading="lazy" alt="Мужчина в футболке супермена"
+                width="660" height="401">
+            </picture>
+          </div>
+          <div class="gym__wrapper-video">
+            <iframe width="364" height="228"
+              src="https://www.youtube.com/embed/9TZXsZItgdw?si=UbuakXrvJ-3MeEgS?feature=oembed&autoplay=1"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen>
+            </iframe>
+            <div class="gym__wrapper-poster">
               <picture>
-                <source type="image/webp" media="(max-width: $vp-1366)"
-                  srcset="img/hero-tablet1x.webp 1x, img/hero-tablet2x.webp 2x">
-                <source type="image/webp" srcset="img/hero1x.webp 1x, img/hero2x.webp 2x">
-                <source media="(max-width: $vp-1366)" srcset="img/hero-tablet1x.jpg 1x, img/hero-tablet2x.jpg 2x"
-                  width="324" height="390">
-                <img src="img/hero1x.jpg" srcset="img/hero2x.jpg 2x" loading="lazy" alt="Мужчина в футболке супермена"
-                  width="500" height="524">
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="img/poster-mobile1x.webp 1x, img/poster-mobile2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1365px)"
+                  srcset="img/poster-tablet1x.webp 1x, img/poster-tablet2x.webp 2x">
+                <source type="image/webp" srcset="img/poster1x.webp 1x, img/poster2x.webp 2x">
+                <source media="(max-width: 767px)" srcset="img/poster-mobile1x.jpg 1x, img/poster-mobile2x.jpg 2x"
+                  width="320" height="167">
+                <source media="(max-width: 1365px)" srcset="img/poster-tablet1x.jpg 1x, img/poster-tablet2x.jpg 2x"
+                  width="265" height="167">
+                <img src="img/poster1x.jpg" srcset="img/poster2x.jpg 2x" loading="lazy"
+                  alt="Обложка видео тренажерного зала" width="364" height="228">
               </picture>
             </div>
           </div>
+        </div>
+      </section>
+      <section class="subscription">
+        <div class="subscription__container container">
+          <h2 class="subscription__title">Абонементы</h2>
+          <ul class="subscription__list">
+            <li class="subscription__item">
+              <button class="subscription__button btn" type="button">1 месяц</button>
+            </li>
+            <li class="subscription__item">
+              <button class="subscription__button btn" type="button">6 месяцев</button>
+            </li>
+            <li class="subscription__item">
+              <button class="subscription__button btn" type="button">12 месяцев</button>
+            </li>
+          </ul>
+          <ul class="subscription__list cards">
+            <li class="cards__item">
+              <h3 class="cards__title">С тренером</h3>
+              <p class="cards__description">12 занятий</p>
+              <span class="cards__text">5000</span>
+              <b class="cards__price">5000</b>
+              <a class="cards__button btn" href="#">Купить абонемент</a>
+            </li>
+            <li class="cards__item">
+              <h3 class="cards__title">Дневной</h3>
+              <p class="cards__description">с 8:00 до 17:00</p>
+              <span class="cards__text">1700</span>
+              <b class="cards__price">1700</b>
+              <a class="cards__button btn" href="#">Купить абонемент</a>
+            </li>
+            <li class="cards__item">
+              <h3 class="cards__title">Полный день</h3>
+              <p class="cards__description">с 8:00 до 22:00</p>
+              <span class="cards__text">2700</span>
+              <b class="cards__price">2700</b>
+              <a class="cards__button btn" href="#">Купить абонемент</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="games">
+        <div class="games__container container">
+          <div class="games__wrapper">
+            <div class="games__wrapper-description">
+              <p class="games__text">Super games</p>
+              <p class="games__description">Ежегодные соревнования по CrossFit</p>
+              <div class="games__group">
+                <span class="games__date">Дата</span>
+                <span class="games__day">7</span>
+                <span class="games__month">Марта</span>
+                <span class="games__year">2019</span>
+                <span class="games__time">Время</span>
+                <span class="games__hour">12:00</span>
+              </div>
+              <a class="games__link" href="#">заполнить заявку</a>
+            </div>
+            <div class="games__wrapper-image">
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="img/games-mobile1x.webp 1x, img/games-mobile2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1365px)"
+                  srcset="img/games-tablet1x.webp 1x, img/games-tablet2x.webp 2x">
+                <source type="image/webp" srcset="img/games1x.webp 1x, img/games2x.webp 2x">
+                <source media="(max-width: 767px)" srcset="img/games-mobile1x.jpg 1x, img/games-mobile2x.jpg 2x"
+                  width="290" height="292">
+                <source media="(max-width: 1365px)" srcset="img/games-tablet1x.jpg 1x, img/games-tablet2x.jpg 2x"
+                  width="386" height="324">
+                <img src="img/games1x.jpg" srcset="img/games2x.jpg 2x" loading="lazy"
+                  alt="Спортивный мужчина взрывает белый порошок неизвестного происхождения" width="660" height="500">
+              </picture>
+            </div>
+          </div>
+          <h2>Жюри</h2>
+          <div class="games-slider"></div>
         </div>
       </section>
     </main>

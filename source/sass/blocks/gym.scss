@@ -1,0 +1,63 @@
+.gym {
+  padding: 120px 0 235px;
+  position: relative;
+}
+
+.gym__container {
+  display: flex;
+  gap: 145px;
+}
+
+.gym__text-content {
+  color: #102654;
+  max-width: 355px;
+  min-height: 401px;
+}
+
+.gym__text-content h2 {
+  font-family: $ff-base;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 54px;
+  letter-spacing: 1.62px;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.gym__text-content h3 {
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 95px;
+}
+
+.gym__text-content p {
+  font-weight: 300;
+  margin: 0;
+}
+
+.gym__text-content p + p {
+  margin-top: 8px;
+}
+
+.gym__wrapper-video {
+  position: absolute;
+  top: 408px;
+  left: 540px;
+}
+
+.gym__wrapper-poster {
+  position: absolute;
+  top: 0;
+
+  &::after {
+    content: "";
+    width: 100%;
+    min-height: 228px;
+    background: rgba(20, 54, 122, 0.5);
+    display: block;
+    position: absolute;
+    top: 0;
+  }
+}
