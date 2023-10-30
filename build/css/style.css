@@ -1325,20 +1325,6 @@ button,
   left: 540px;
 }
 
-.gym__wrapper-poster {
-  position: absolute;
-  top: 0;
-}
-.gym__wrapper-poster::after {
-  content: "";
-  width: 100%;
-  min-height: 228px;
-  background: rgba(20, 54, 122, 0.5);
-  display: block;
-  position: absolute;
-  top: 0;
-}
-
 .subscription {
   padding: 120px 0 120px;
   background-color: #f8f9fc;
@@ -1520,6 +1506,41 @@ button,
   border: 2px solid #ffffff;
   max-height: 66px;
   padding: 25px 54px;
+}
+
+.games__title {
+  color: #102654;
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 54px;
+  letter-spacing: 1.62px;
+  margin-bottom: 45px;
+}
+
+.poster {
+  -webkit-transition: opacity 350ms ease-in;
+  transition: opacity 350ms ease-in;
+}
+
+.poster__wrapper {
+  position: absolute;
+  top: 0;
+}
+.poster__wrapper::after {
+  content: "";
+  width: 100%;
+  min-height: 228px;
+  background: rgba(20, 54, 122, 0.5);
+  display: block;
+  position: absolute;
+  top: 0;
+}
+.poster__wrapper--del {
+  display: none;
+}
+.poster__wrapper--hidden {
+  opacity: 0;
 }
 
 /* @mixin hover-focus {

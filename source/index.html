@@ -82,26 +82,27 @@
             </picture>
           </div>
           <div class="gym__wrapper-video">
-            <iframe width="364" height="228"
-              src="https://www.youtube.com/embed/9TZXsZItgdw?si=UbuakXrvJ-3MeEgS?feature=oembed&autoplay=1"
-              title="YouTube video player" frameborder="0"
+            <iframe class="gym__iframe" width="364" height="228" src="" title="YouTube video player" frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen>
             </iframe>
-            <div class="gym__wrapper-poster">
-              <picture>
-                <source type="image/webp" media="(max-width: 767px)"
-                  srcset="img/poster-mobile1x.webp 1x, img/poster-mobile2x.webp 2x">
-                <source type="image/webp" media="(max-width: 1365px)"
-                  srcset="img/poster-tablet1x.webp 1x, img/poster-tablet2x.webp 2x">
-                <source type="image/webp" srcset="img/poster1x.webp 1x, img/poster2x.webp 2x">
-                <source media="(max-width: 767px)" srcset="img/poster-mobile1x.jpg 1x, img/poster-mobile2x.jpg 2x"
-                  width="320" height="167">
-                <source media="(max-width: 1365px)" srcset="img/poster-tablet1x.jpg 1x, img/poster-tablet2x.jpg 2x"
-                  width="265" height="167">
-                <img src="img/poster1x.jpg" srcset="img/poster2x.jpg 2x" loading="lazy"
-                  alt="Обложка видео тренажерного зала" width="364" height="228">
-              </picture>
+            <div class="gym__container-poster poster">
+              <div class="poster__wrapper">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="img/poster-mobile1x.webp 1x, img/poster-mobile2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1365px)"
+                    srcset="img/poster-tablet1x.webp 1x, img/poster-tablet2x.webp 2x">
+                  <source type="image/webp" srcset="img/poster1x.webp 1x, img/poster2x.webp 2x">
+                  <source media="(max-width: 767px)" srcset="img/poster-mobile1x.jpg 1x, img/poster-mobile2x.jpg 2x"
+                    width="320" height="167">
+                  <source media="(max-width: 1365px)" srcset="img/poster-tablet1x.jpg 1x, img/poster-tablet2x.jpg 2x"
+                    width="265" height="167">
+                  <img src="img/poster1x.jpg" srcset="img/poster2x.jpg 2x" loading="lazy"
+                    alt="Обложка видео тренажерного зала" width="364" height="228">
+                </picture>
+              </div>
+              <button class="poster__button" type="button" aria-label="Воспроизвести видео.">!!!!!!!!!!</button>
             </div>
           </div>
         </div>
@@ -177,7 +178,7 @@
               </picture>
             </div>
           </div>
-          <h2>Жюри</h2>
+          <h2 class="games__title">Жюри</h2>
           <div class="games-slider"></div>
         </div>
       </section>

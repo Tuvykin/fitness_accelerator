@@ -46,18 +46,3 @@
   top: 408px;
   left: 540px;
 }
-
-.gym__wrapper-poster {
-  position: absolute;
-  top: 0;
-
-  &::after {
-    content: "";
-    width: 100%;
-    min-height: 228px;
-    background: rgba(20, 54, 122, 0.5);
-    display: block;
-    position: absolute;
-    top: 0;
-  }
-}

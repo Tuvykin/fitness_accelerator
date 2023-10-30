@@ -1,0 +1,26 @@
+.poster {
+  transition: opacity 350ms ease-in;
+}
+
+.poster__wrapper {
+  position: absolute;
+  top: 0;
+
+  &::after {
+    content: "";
+    width: 100%;
+    min-height: 228px;
+    background: rgba(20, 54, 122, 0.5);
+    display: block;
+    position: absolute;
+    top: 0;
+  }
+
+  &--del {
+    display: none;
+  }
+
+  &--hidden {
+    opacity: 0;
+  }
+}
