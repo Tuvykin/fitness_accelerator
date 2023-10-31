@@ -1325,6 +1325,10 @@ button,
   left: 540px;
 }
 
+.gym__iframe {
+  background-color: #030a1a;
+}
+
 .subscription {
   padding: 120px 0 120px;
   background-color: #f8f9fc;

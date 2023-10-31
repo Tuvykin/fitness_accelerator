@@ -112,13 +112,13 @@
           <h2 class="subscription__title">Абонементы</h2>
           <ul class="subscription__list">
             <li class="subscription__item">
-              <button class="subscription__button btn" type="button">1 месяц</button>
+              <button class="subscription__button subscription__button--current" type="button">1 месяц</button>
             </li>
             <li class="subscription__item">
-              <button class="subscription__button btn" type="button">6 месяцев</button>
+              <button class="subscription__button" type="button">6 месяцев</button>
             </li>
             <li class="subscription__item">
-              <button class="subscription__button btn" type="button">12 месяцев</button>
+              <button class="subscription__button" type="button">12 месяцев</button>
             </li>
           </ul>
           <ul class="subscription__list cards">
@@ -179,7 +179,36 @@
             </div>
           </div>
           <h2 class="games__title">Жюри</h2>
-          <div class="games-slider"></div>
+          <div class="games__slider slider">
+            <ul class="slider__list">
+              <li class="slider__item">
+                <h3 class="slider__title"></h3>
+                <div class="slider__wrapper-image">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/games-mobile1x.webp 1x, img/games-mobile2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1365px)"
+                      srcset="img/games-tablet1x.webp 1x, img/games-tablet2x.webp 2x">
+                    <source type="image/webp" srcset="img/games1x.webp 1x, img/games2x.webp 2x">
+                    <source media="(max-width: 767px)" srcset="img/games-mobile1x.jpg 1x, img/games-mobile2x.jpg 2x"
+                      width="226" height="274">
+                    <source media="(max-width: 1365px)" srcset="img/games-tablet1x.jpg 1x, img/games-tablet2x.jpg 2x"
+                      width="268" height="294">
+                    <img src="img/games1x.jpg" srcset="img/games2x.jpg 2x" loading="lazy" alt="" width="260"
+                      height="294">
+                  </picture>
+                </div>
+                <div class="slider__wrapper-card">
+                  <span class="slider__text-card">CrossFit</span>
+                  <ul class="slider__card-list">
+                    <li class="slider__card-item">Certified Level 3 Trainer</li>
+                    <li class="slider__card-item">Победитель чемпионата России по CrossFit</li>
+                    <li class="slider__card-item">Опыт — 6 лет</li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
     </main>
