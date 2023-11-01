@@ -1,0 +1,29 @@
+.slider__list {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  gap: 40px;
+}
+
+.slider__item {
+  position: relative;
+}
+
+.slider__wrapper-card {
+  display: none;
+}
+
+.slider__title {
+  position: absolute;
+  color: $color-default-white;
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 400;
+  margin: 0;
+  bottom: 26px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: max-content;
+}
+

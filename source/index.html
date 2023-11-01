@@ -86,7 +86,8 @@
             </picture>
           </div>
           <div class="gym__wrapper-video">
-            <iframe class="gym__iframe" width="364" height="228" src="" title="YouTube video player" frameborder="0"
+            <iframe class="gym__iframe" width="364" height="228"
+              src="https://www.youtube.com/embed/9TZXsZItgdw?si=UbuakXrvJ-3MeEgS" title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen>
             </iframe>
@@ -127,27 +128,50 @@
           </ul>
           <ul class="subscription__list cards">
             <li class="cards__item">
-              <h3 class="cards__title">С тренером</h3>
-              <p class="cards__description">12 занятий</p>
-              <span class="cards__text">5000</span>
-              <b class="cards__price">5000</b>
-              <a class="cards__button btn" href="#">Купить абонемент</a>
+              <div class="cards__wrapper">
+                <h3 class="cards__title">С тренером</h3>
+                <p class="cards__description">12 занятий</p>
+                <span class="cards__text">5000</span>
+                <b class="cards__price">5000</b>
+                <a class="cards__button" href="#">
+                  <span class="cards__button-text">Купить абонемент</span>
+                </a>
+              </div>
+            </li>
+            <li class="cards__item cards__item--current">
+              <div class="cards__wrapper">
+                <h3 class="cards__title">Дневной</h3>
+                <p class="cards__description">с 8:00 до 17:00</p>
+                <span class="cards__text">1700</span>
+                <b class="cards__price">1700</b>
+                <a class="cards__button cards__button--current" href="#">
+                  <span class="cards__button-text">Купить абонемент</span>
+                </a>
+              </div>
             </li>
             <li class="cards__item">
-              <h3 class="cards__title">Дневной</h3>
-              <p class="cards__description">с 8:00 до 17:00</p>
-              <span class="cards__text">1700</span>
-              <b class="cards__price">1700</b>
-              <a class="cards__button btn" href="#">Купить абонемент</a>
-            </li>
-            <li class="cards__item">
-              <h3 class="cards__title">Полный день</h3>
-              <p class="cards__description">с 8:00 до 22:00</p>
-              <span class="cards__text">2700</span>
-              <b class="cards__price">2700</b>
-              <a class="cards__button btn" href="#">Купить абонемент</a>
+              <div class="cards__wrapper">
+                <h3 class="cards__title">Полный день</h3>
+                <p class="cards__description">с 8:00 до 22:00</p>
+                <span class="cards__text">2700</span>
+                <b class="cards__price">2700</b>
+                <a class="cards__button" href="#">
+                  <span class="cards__button-text">Купить абонемент</span>
+                </a>
+              </div>
             </li>
           </ul>
+        </div>
+        <div class="subscription__wrapper">
+          <picture>
+            <source type="image/webp" media="(max-width: 1365px)"
+              srcset="img/pancakes1x-tablet.webp 1x, img/pancakes2x-tablet.webp 2x">
+            <source type="image/webp" srcset="img/pancakes1x.webp 1x, img/pancakes2x.webp 2x">
+            <source media="(max-width: 1365px)" srcset="img/pancakes1x-tablet 1x, img/pancakes2x-tablet.png 2x"
+              width="275" height="328">
+            <img src="img/pancakes1x.png" srcset="img/pancakes2x.png 2x" loading="lazy" alt="Блины для грифа."
+              width="321" height="384">
+          </picture>
         </div>
       </section>
       <section class="games">
@@ -184,22 +208,26 @@
           </div>
           <h2 class="games__title">Жюри</h2>
           <div class="games__slider slider">
+            <div class="slider__wrapper-button">
+              <button class="slider__button slider__button--prev">22</button>
+              <button class="slider__button slider__button--next">33</button>
+            </div>
             <ul class="slider__list">
               <li class="slider__item">
-                <h3 class="slider__title"></h3>
+                <h3 class="slider__title">Анна Павлова</h3>
                 <div class="slider__wrapper-image">
                   <picture>
                     <source type="image/webp" media="(max-width: 767px)"
-                      srcset="img/games-mobile1x.webp 1x, img/games-mobile2x.webp 2x">
+                      srcset="img/coach-1-1x-mobile.webp 1x, img/coach-1-2x-mobile.webp 2x">
                     <source type="image/webp" media="(max-width: 1365px)"
-                      srcset="img/games-tablet1x.webp 1x, img/games-tablet2x.webp 2x">
-                    <source type="image/webp" srcset="img/games1x.webp 1x, img/games2x.webp 2x">
-                    <source media="(max-width: 767px)" srcset="img/games-mobile1x.jpg 1x, img/games-mobile2x.jpg 2x"
-                      width="226" height="274">
-                    <source media="(max-width: 1365px)" srcset="img/games-tablet1x.jpg 1x, img/games-tablet2x.jpg 2x"
-                      width="268" height="294">
-                    <img src="img/games1x.jpg" srcset="img/games2x.jpg 2x" loading="lazy" alt="" width="260"
-                      height="294">
+                      srcset="img/coach-1-1x-tablet.webp 1x, img/coach-1-2x-tablet.webp 2x">
+                    <source type="image/webp" srcset="img/coach-1-1x.webp 1x, img/coach-1-2x.webp 2x">
+                    <source media="(max-width: 767px)"
+                      srcset="img/coach-1-1x-mobile.jpg 1x, img/coach-1-2x-mobile.jpg 2x" width="226" height="274">
+                    <source media="(max-width: 1365px)"
+                      srcset="img/coach-1-1x-tablet.jpg 1x, img/coach-1-2x-tablet.jpg 2x" width="268" height="294">
+                    <img src="img/coach-1-1x.jpg" srcset="img/coach-1-2x.jpg 2x" loading="lazy" alt="Фото тренера Анна."
+                      width="260" height="294">
                   </picture>
                 </div>
                 <div class="slider__wrapper-card">
@@ -211,8 +239,226 @@
                   </ul>
                 </div>
               </li>
+              <li class="slider__item">
+                <h3 class="slider__title">Алексей Лавров</h3>
+                <div class="slider__wrapper-image">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/coach-2-1x-mobile.webp 1x, img/coach-2-2x-mobile.webp 2x">
+                    <source type="image/webp" media="(max-width: 1365px)"
+                      srcset="img/coach-2-1x-tablet.webp 1x, img/coach-2-2x-tablet.webp 2x">
+                    <source type="image/webp" srcset="img/coach-2-1x.webp 1x, img/coach-2-2x.webp 2x">
+                    <source media="(max-width: 767px)"
+                      srcset="img/coach-2-1x-mobile.jpg 1x, img/coach-2-2x-mobile.jpg 2x" width="226" height="274">
+                    <source media="(max-width: 1365px)"
+                      srcset="img/coach-2-1x-tablet.jpg 1x, img/coach-2-2x-tablet.jpg 2x" width="268" height="294">
+                    <img src="img/coach-2-1x.jpg" srcset="img/coach-2-2x.jpg 2x" loading="lazy" alt="Фото тренера Анна."
+                      width="260" height="294">
+                  </picture>
+                </div>
+                <div class="slider__wrapper-card">
+                  <span class="slider__text-card">CrossFit</span>
+                  <ul class="slider__card-list">
+                    <li class="slider__card-item">Certified Level 3 Trainer</li>
+                    <li class="slider__card-item">Победитель чемпионата России по CrossFit</li>
+                    <li class="slider__card-item">Опыт — 6 лет</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="slider__item">
+                <h3 class="slider__title">Александр Пашков</h3>
+                <div class="slider__wrapper-image">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/coach-3-1x-mobile.webp 1x, img/coach-3-2x-mobile.webp 2x">
+                    <source type="image/webp" media="(max-width: 1365px)"
+                      srcset="img/coach-3-1x-tablet.webp 1x, img/coach-3-2x-tablet.webp 2x">
+                    <source type="image/webp" srcset="img/coach-3-1x.webp 1x, img/coach-3-2x.webp 2x">
+                    <source media="(max-width: 767px)"
+                      srcset="img/coach-3-1x-mobile.jpg 1x, img/coach-3-2x-mobile.jpg 2x" width="226" height="274">
+                    <source media="(max-width: 1365px)"
+                      srcset="img/coach-3-1x-tablet.jpg 1x, img/coach-3-2x-tablet.jpg 2x" width="268" height="294">
+                    <img src="img/coach-3-1x.jpg" srcset="img/coach-3-2x.jpg 2x" loading="lazy" alt="Фото тренера Анна."
+                      width="260" height="294">
+                  </picture>
+                </div>
+                <div class="slider__wrapper-card">
+                  <span class="slider__text-card">CrossFit</span>
+                  <ul class="slider__card-list">
+                    <li class="slider__card-item">Certified Level 3 Trainer</li>
+                    <li class="slider__card-item">Победитель чемпионата России по CrossFit</li>
+                    <li class="slider__card-item">Опыт — 6 лет</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="slider__item">
+                <h3 class="slider__title">Мария Кетова</h3>
+                <div class="slider__wrapper-image">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/coach-4-1x-mobile.webp 1x, img/coach-4-2x-mobile.webp 2x">
+                    <source type="image/webp" media="(max-width: 1365px)"
+                      srcset="img/coach-4-1x-tablet.webp 1x, img/coach-4-2x-tablet.webp 2x">
+                    <source type="image/webp" srcset="img/coach-4-1x.webp 1x, img/coach-4-2x.webp 2x">
+                    <source media="(max-width: 767px)"
+                      srcset="img/coach-4-1x-mobile.jpg 1x, img/coach-4-2x-mobile.jpg 2x" width="226" height="274">
+                    <source media="(max-width: 1365px)"
+                      srcset="img/coach-4-1x-tablet.jpg 1x, img/coach-4-2x-tablet.jpg 2x" width="268" height="294">
+                    <img src="img/coach-4-1x.jpg" srcset="img/coach-4-2x.jpg 2x" loading="lazy" alt="Фото тренера Анна."
+                      width="260" height="294">
+                  </picture>
+                </div>
+                <div class="slider__wrapper-card">
+                  <span class="slider__text-card">CrossFit</span>
+                  <ul class="slider__card-list">
+                    <li class="slider__card-item">Certified Level 3 Trainer</li>
+                    <li class="slider__card-item">Победитель чемпионата России по CrossFit</li>
+                    <li class="slider__card-item">Опыт — 6 лет</li>
+                  </ul>
+                </div>
+              </li>
+              <!-- <li class="slider__item">
+                <h3 class="slider__title">Анна Павлова</h3>
+                <div class="slider__wrapper-image">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/coach-1-1x-mobile.webp 1x, img/coach-1-2x-mobile.webp 2x">
+                    <source type="image/webp" media="(max-width: 1365px)"
+                      srcset="img/coach-1-1x-tablet.webp 1x, img/coach-1-2x-tablet.webp 2x">
+                    <source type="image/webp" srcset="img/coach-1-1x.webp 1x, img/coach-1-2x.webp 2x">
+                    <source media="(max-width: 767px)"
+                      srcset="img/coach-1-1x-mobile.jpg 1x, img/coach-1-2x-mobile.jpg 2x" width="226" height="274">
+                    <source media="(max-width: 1365px)"
+                      srcset="img/coach-1-1x-tablet.jpg 1x, img/coach-1-2x-tablet.jpg 2x" width="268" height="294">
+                    <img src="img/coach-1-1x.jpg" srcset="img/coach-1-2x.jpg 2x" loading="lazy" alt="Фото тренера Анна."
+                      width="260" height="294">
+                  </picture>
+                </div>
+                <div class="slider__wrapper-card">
+                  <span class="slider__text-card">CrossFit</span>
+                  <ul class="slider__card-list">
+                    <li class="slider__card-item">Certified Level 3 Trainer</li>
+                    <li class="slider__card-item">Победитель чемпионата России по CrossFit</li>
+                    <li class="slider__card-item">Опыт — 6 лет</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="slider__item">
+                <h3 class="slider__title">Алексей Лавров</h3>
+                <div class="slider__wrapper-image">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/coach-2-1x-mobile.webp 1x, img/coach-2-2x-mobile.webp 2x">
+                    <source type="image/webp" media="(max-width: 1365px)"
+                      srcset="img/coach-2-1x-tablet.webp 1x, img/coach-2-2x-tablet.webp 2x">
+                    <source type="image/webp" srcset="img/coach-2-1x.webp 1x, img/coach-2-2x.webp 2x">
+                    <source media="(max-width: 767px)"
+                      srcset="img/coach-2-1x-mobile.jpg 1x, img/coach-2-2x-mobile.jpg 2x" width="226" height="274">
+                    <source media="(max-width: 1365px)"
+                      srcset="img/coach-2-1x-tablet.jpg 1x, img/coach-2-2x-tablet.jpg 2x" width="268" height="294">
+                    <img src="img/coach-2-1x.jpg" srcset="img/coach-2-2x.jpg 2x" loading="lazy" alt="Фото тренера Анна."
+                      width="260" height="294">
+                  </picture>
+                </div>
+                <div class="slider__wrapper-card">
+                  <span class="slider__text-card">CrossFit</span>
+                  <ul class="slider__card-list">
+                    <li class="slider__card-item">Certified Level 3 Trainer</li>
+                    <li class="slider__card-item">Победитель чемпионата России по CrossFit</li>
+                    <li class="slider__card-item">Опыт — 6 лет</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="slider__item">
+                <h3 class="slider__title">Александр Пашков</h3>
+                <div class="slider__wrapper-image">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/coach-3-1x-mobile.webp 1x, img/coach-3-2x-mobile.webp 2x">
+                    <source type="image/webp" media="(max-width: 1365px)"
+                      srcset="img/coach-3-1x-tablet.webp 1x, img/coach-3-2x-tablet.webp 2x">
+                    <source type="image/webp" srcset="img/coach-3-1x.webp 1x, img/coach-3-2x.webp 2x">
+                    <source media="(max-width: 767px)"
+                      srcset="img/coach-3-1x-mobile.jpg 1x, img/coach-3-2x-mobile.jpg 2x" width="226" height="274">
+                    <source media="(max-width: 1365px)"
+                      srcset="img/coach-3-1x-tablet.jpg 1x, img/coach-3-2x-tablet.jpg 2x" width="268" height="294">
+                    <img src="img/coach-3-1x.jpg" srcset="img/coach-3-2x.jpg 2x" loading="lazy" alt="Фото тренера Анна."
+                      width="260" height="294">
+                  </picture>
+                </div>
+                <div class="slider__wrapper-card">
+                  <span class="slider__text-card">CrossFit</span>
+                  <ul class="slider__card-list">
+                    <li class="slider__card-item">Certified Level 3 Trainer</li>
+                    <li class="slider__card-item">Победитель чемпионата России по CrossFit</li>
+                    <li class="slider__card-item">Опыт — 6 лет</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="slider__item">
+                <h3 class="slider__title">Мария Кетова</h3>
+                <div class="slider__wrapper-image">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/coach-4-1x-mobile.webp 1x, img/coach-4-2x-mobile.webp 2x">
+                    <source type="image/webp" media="(max-width: 1365px)"
+                      srcset="img/coach-4-1x-tablet.webp 1x, img/coach-4-2x-tablet.webp 2x">
+                    <source type="image/webp" srcset="img/coach-4-1x.webp 1x, img/coach-4-2x.webp 2x">
+                    <source media="(max-width: 767px)"
+                      srcset="img/coach-4-1x-mobile.jpg 1x, img/coach-4-2x-mobile.jpg 2x" width="226" height="274">
+                    <source media="(max-width: 1365px)"
+                      srcset="img/coach-4-1x-tablet.jpg 1x, img/coach-4-2x-tablet.jpg 2x" width="268" height="294">
+                    <img src="img/coach-4-1x.jpg" srcset="img/coach-4-2x.jpg 2x" loading="lazy" alt="Фото тренера Анна."
+                      width="260" height="294">
+                  </picture>
+                </div>
+                <div class="slider__wrapper-card">
+                  <span class="slider__text-card">CrossFit</span>
+                  <ul class="slider__card-list">
+                    <li class="slider__card-item">Certified Level 3 Trainer</li>
+                    <li class="slider__card-item">Победитель чемпионата России по CrossFit</li>
+                    <li class="slider__card-item">Опыт — 6 лет</li>
+                  </ul>
+                </div>
+              </li> -->
             </ul>
           </div>
+        </div>
+      </section>
+      <section class="advantages">
+        <div class="advantages__container container">
+          <h2>Наши преимущества</h2>
+          <ul>
+            <li>
+              <h3>Площадь</h3>
+              <p>Занимайтесь без очередей и толкучки</p>
+              <span>кв/м</span>
+              <span>900</span>
+            </li>
+            <li>
+              <h3>Собственная парковка</h3>
+              <p>Вы всегда найдете место для своей машины на нашей парковке</p>
+              <span>машин</span>
+              <span>70</span>
+            </li>
+            <li>
+              <p>Современные тренажеры на все группы мышц</p>
+              <span>Тренажеров</span>
+              <span>100</span>
+            </li>
+            <li>
+              <h3>Комфорт</h3>
+              <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
+              <span>мест</span>
+              <span>350</span>
+            </li>
+            <li>
+              <h3>Тренерский опыт</h3>
+              <p>Добивайтесь своих целей быстрее с профессиональным тренером</p>
+              <span>лет</span>
+              <span>5+</span>
+            </li>
+          </ul>
         </div>
       </section>
     </main>
