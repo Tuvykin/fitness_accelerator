@@ -107,7 +107,13 @@
                     alt="Обложка видео тренажерного зала" width="364" height="228">
                 </picture>
               </div>
-              <button class="poster__button" type="button" aria-label="Воспроизвести видео.">!!!!!!!!!!</button>
+              <button class="poster__button" type="button" aria-label="Воспроизвести видео.">
+                <span class="poster__text">
+                  <svg width="100" height="100">
+                    <use xlink:href="img/sprite.svg#icon-video"></use>
+                  </svg>
+                </span>
+              </button>
             </div>
           </div>
         </div>
@@ -126,39 +132,48 @@
               <button class="subscription__button" type="button">12 месяцев</button>
             </li>
           </ul>
-          <ul class="subscription__list cards">
+          <ul class="subscription__list-cards cards">
             <li class="cards__item">
+              <h3 class="cards__title">С тренером</h3>
+              <p class="cards__description">12 занятий</p>
               <div class="cards__wrapper">
-                <h3 class="cards__title">С тренером</h3>
-                <p class="cards__description">12 занятий</p>
                 <span class="cards__text">5000</span>
                 <b class="cards__price">5000</b>
-                <a class="cards__button" href="#">
-                  <span class="cards__button-text">Купить абонемент</span>
-                </a>
+                <svg width="30" height="42">
+                  <use xlink:href="img/sprite.svg#icon-cent"></use>
+                </svg>
               </div>
+              <a class="cards__button" href="#">
+                <span class="cards__button-text">Купить абонемент</span>
+              </a>
             </li>
             <li class="cards__item cards__item--current">
+              <h3 class="cards__title">Дневной</h3>
+              <p class="cards__description">с 8:00 до 17:00</p>
               <div class="cards__wrapper">
-                <h3 class="cards__title">Дневной</h3>
-                <p class="cards__description">с 8:00 до 17:00</p>
                 <span class="cards__text">1700</span>
                 <b class="cards__price">1700</b>
-                <a class="cards__button cards__button--current" href="#">
-                  <span class="cards__button-text">Купить абонемент</span>
-                </a>
+                <svg width="30" height="42">
+                  <use xlink:href="img/sprite.svg#icon-cent"></use>
+                </svg>
               </div>
+              <a class="cards__button cards__button--current" href="#">
+                <span class="cards__button-text">Купить абонемент</span>
+              </a>
             </li>
             <li class="cards__item">
+              <h3 class="cards__title">Полный день</h3>
+              <p class="cards__description">с 8:00 до 22:00</p>
               <div class="cards__wrapper">
-                <h3 class="cards__title">Полный день</h3>
-                <p class="cards__description">с 8:00 до 22:00</p>
                 <span class="cards__text">2700</span>
                 <b class="cards__price">2700</b>
-                <a class="cards__button" href="#">
-                  <span class="cards__button-text">Купить абонемент</span>
-                </a>
+                <svg width="30" height="42">
+                  <use xlink:href="img/sprite.svg#icon-cent"></use>
+                </svg>
               </div>
+              <a class="cards__button" href="#">
+                <span class="cards__button-text">Купить абонемент</span>
+              </a>
             </li>
           </ul>
         </div>

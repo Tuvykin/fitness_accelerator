@@ -1,11 +1,11 @@
 .gym {
   padding: 120px 0 235px;
-  position: relative;
 }
 
 .gym__container {
   display: flex;
   gap: 145px;
+  position: relative;
 }
 
 .gym__text-content {
@@ -43,8 +43,8 @@
 
 .gym__wrapper-video {
   position: absolute;
-  top: 408px;
-  left: 540px;
+  top: 288px;
+  right: 500px;
 }
 
 .gym__iframe {

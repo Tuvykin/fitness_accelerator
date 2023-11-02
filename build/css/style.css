@@ -1276,7 +1276,6 @@ button,
 
 .gym {
   padding: 120px 0 235px;
-  position: relative;
 }
 
 .gym__container {
@@ -1284,6 +1283,7 @@ button,
   display: -ms-flexbox;
   display: flex;
   gap: 145px;
+  position: relative;
 }
 
 .gym__text-content {
@@ -1321,8 +1321,8 @@ button,
 
 .gym__wrapper-video {
   position: absolute;
-  top: 408px;
-  left: 540px;
+  top: 288px;
+  right: 500px;
 }
 
 .gym__iframe {
@@ -1333,6 +1333,8 @@ button,
   padding: 120px 0 120px;
   background-color: #f8f9fc;
   color: #102654;
+  position: relative;
+  min-height: 851px;
 }
 
 .subscription__container {
@@ -1347,6 +1349,13 @@ button,
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 50%;
 }
 
 .subscription__title {
@@ -1414,39 +1423,33 @@ button,
           transform: translate(-50%, -50%);
 }
 
+.subscription__wrapper {
+  position: absolute;
+  right: 0;
+  bottom: -180px;
+}
+
 .cards {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   gap: 40px;
 }
 
 .cards__item {
   padding: 65px 78px;
   text-align: center;
-  position: relative;
-  width: 360px;
-}
-.cards__item--current:before {
-  content: "";
-  position: absolute;
-  top: 7px;
-  left: 7px;
-  bottom: 7px;
-  right: 7px;
   background-color: #ffffff;
-  z-index: 1;
 }
-.cards__item--current:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: var(--1, linear-gradient(97deg, #ED0233 17.6%, #00359F 95.31%));
-}
-
-.cards__wrapper {
-  z-index: 1;
-  position: relative;
+.cards__item--current {
+  border: 7px solid;
+  padding: 58px 71px;
+  -o-border-image: linear-gradient(to right, rgb(209, 10, 66), rgb(0, 53, 159)) 1;
+     border-image: -webkit-gradient(linear, left top, right top, from(rgb(209, 10, 66)), to(rgb(0, 53, 159))) 1;
+     border-image: linear-gradient(to right, rgb(209, 10, 66), rgb(0, 53, 159)) 1;
 }
 
 .cards__title {
@@ -1469,6 +1472,20 @@ button,
   font-weight: 700;
   line-height: 150px;
   opacity: 0.48;
+  position: absolute;
+  left: 0;
+}
+
+.cards__wrapper {
+  min-height: 150px;
+  position: relative;
+  margin-bottom: 29px;
+}
+
+.cards__wrapper svg {
+  position: absolute;
+  right: 18px;
+  bottom: 30px;
 }
 
 .cards__price {
@@ -1478,8 +1495,9 @@ button,
   line-height: 90px;
   display: block;
   position: absolute;
-  top: 130px;
-  left: 20px;
+  top: 54px;
+  left: 19px;
+  margin-right: 14px;
 }
 
 .cards__button {
@@ -1637,6 +1655,36 @@ button,
 }
 .poster__wrapper--hidden {
   opacity: 0;
+}
+
+.poster__button {
+  border: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: transparent;
+  min-height: 100px;
+  min-width: 100px;
+}
+
+.poster__text {
+  border-radius: 50px;
+  background: linear-gradient(97deg, #ED0233 17.6%, #003EB7 95.31%);
+  width: 80px;
+  height: 80px;
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.poster__text svg {
+  position: absolute;
+  top: -10px;
+  left: -10px;
 }
 
 .advantages {
