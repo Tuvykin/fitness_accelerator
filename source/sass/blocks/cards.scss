@@ -10,6 +10,7 @@
   padding: 65px 78px;
   text-align: center;
   background-color: $color-default-white;
+  width: 360px;
 
   &--current {
     border: 7px solid;
@@ -46,12 +47,13 @@
   min-height: 150px;
   position: relative;
   margin-bottom: 29px;
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
 }
 
 .cards__wrapper svg {
-  position: absolute;
-  right: 18px;
-  bottom: 30px;
+  position: relative;
 }
 
 .cards__price {
@@ -60,10 +62,8 @@
   font-weight: 700;
   line-height: 90px;
   display: block;
-  position: absolute;
-  top: 54px;
-  left: 19px;
-  margin-right: 14px;
+  position: relative;
+  padding: 54px 0 6px 19px;
 }
 
 .cards__button {

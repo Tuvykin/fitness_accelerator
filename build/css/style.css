@@ -1443,6 +1443,7 @@ button,
   padding: 65px 78px;
   text-align: center;
   background-color: #ffffff;
+  width: 360px;
 }
 .cards__item--current {
   border: 7px solid;
@@ -1480,12 +1481,17 @@ button,
   min-height: 150px;
   position: relative;
   margin-bottom: 29px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  gap: 14px;
 }
 
 .cards__wrapper svg {
-  position: absolute;
-  right: 18px;
-  bottom: 30px;
+  position: relative;
 }
 
 .cards__price {
@@ -1494,10 +1500,8 @@ button,
   font-weight: 700;
   line-height: 90px;
   display: block;
-  position: absolute;
-  top: 54px;
-  left: 19px;
-  margin-right: 14px;
+  position: relative;
+  padding: 54px 0 6px 19px;
 }
 
 .cards__button {
