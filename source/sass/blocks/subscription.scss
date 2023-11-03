@@ -35,7 +35,7 @@
   gap: 50px;
   position: relative;
 
-  &::after {
+  &:first-of-type::after {
     content: "";
     display: block;
     width: 100%;
