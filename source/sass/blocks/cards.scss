@@ -12,6 +12,7 @@
   text-align: center;
   background-color: $color-default-white;
   width: 360px;
+  position: relative;
 
   &--current {
     border: 7px solid;
@@ -41,12 +42,13 @@
   line-height: 150px;
   opacity: 0.48;
   position: absolute;
-  left: 0;
+  left: 50%;
+  top: 47%;
+  transform: translate(-50%, -50%);
 }
 
 .cards__wrapper {
   min-height: 150px;
-  position: relative;
   margin-bottom: 29px;
   display: flex;
   align-items: baseline;
