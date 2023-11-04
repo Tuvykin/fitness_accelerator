@@ -1,5 +1,6 @@
 .sale {
   padding: 120px 0;
+  text-align: center;
 }
 
 .sale__text-content {
@@ -15,6 +16,7 @@
   letter-spacing: 1.62px;
   margin: 0;
   margin-bottom: 70px;
+  display: block;
 }
 
 .sale__text-content ul {
@@ -24,6 +26,7 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+  text-align: left;
 }
 
 .sale__text-content li:first-of-type {
@@ -38,6 +41,9 @@
   padding: 45px;
   padding-top: 40px;
   padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .sale__wrapper-text-content h3 {
@@ -45,7 +51,7 @@
   font-weight: 700;
   line-height: 26px;
   margin: 0;
-  margin-bottom: 5px
+  margin-bottom: 5px;
 }
 
 .sale__wrapper-text-content b {
@@ -104,6 +110,7 @@
   font-weight: 700;
   margin: 0;
   margin-bottom: 10px;
+  letter-spacing: 1px;
 }
 
 .sale__text-content p {

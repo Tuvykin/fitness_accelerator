@@ -23,7 +23,7 @@
   line-height: 22px;
   font-weight: 400;
   margin: 0;
-  top: 226px;
+  top: 257px;
   left: 50%;
   transform: translate(-50%, -50%);
   min-width: max-content;
@@ -37,11 +37,11 @@
   border: none;
 
   &--prev {
-      left: -64px;
+      left: -49px;
   }
 
   &--next {
-    right: -64px;
+    right: -76px;
     transform: translate(-50%, -50%) rotate(180deg);
   }
 }

@@ -7,8 +7,8 @@
 }
 
 .subscription__container {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  justify-items: center;
   gap: 38px;
   align-items: center;
   position: absolute;
@@ -30,6 +30,7 @@
 .subscription__list {
   margin: 0;
   padding: 0;
+  padding-bottom: 13px;
   list-style-type: none;
   display: flex;
   gap: 50px;
@@ -43,7 +44,7 @@
     height: 2px;
     background-color: rgba(120, 120, 120, 0.20);
     position: absolute;
-    top: 38px;
+    top: 34px;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -74,7 +75,7 @@
     height: 2px;
     background-color: #D10A42;
     position: absolute;
-    top: 38px;
+    top: 34px;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -83,5 +84,5 @@
 .subscription__wrapper {
   position: absolute;
   right: 0;
-  bottom: -180px;
+  bottom: -154px;
 }

@@ -1132,6 +1132,17 @@ button,
   line-height: 26px;
 }
 
+.main-header__logo-link {
+  padding: 22px;
+  display: block;
+}
+
+.main-header__wrapper-logo {
+  background-color: #102654;
+  display: inline-block;
+  margin-top: 40px;
+}
+
 .hero {
   background: -webkit-gradient(linear, left top, right top, from(#1c3477), color-stop(0.01%, #1c3477), color-stop(39.11%, #1a3578), color-stop(75.5%, #73184b), to(#b4022a));
   background: linear-gradient(90deg, #1c3477 0%, #1c3477 0.01%, #1a3578 39.11%, #73184b 75.5%, #b4022a 100%);
@@ -1322,7 +1333,7 @@ button,
 .gym__wrapper-video {
   position: absolute;
   top: 288px;
-  right: 500px;
+  right: 462px;
 }
 
 .gym__iframe {
@@ -1338,13 +1349,9 @@ button,
 }
 
 .subscription__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
   gap: 38px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1370,6 +1377,7 @@ button,
 .subscription__list {
   margin: 0;
   padding: 0;
+  padding-bottom: 13px;
   list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1385,7 +1393,7 @@ button,
   height: 2px;
   background-color: rgba(120, 120, 120, 0.2);
   position: absolute;
-  top: 38px;
+  top: 34px;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
@@ -1416,7 +1424,7 @@ button,
   height: 2px;
   background-color: #D10A42;
   position: absolute;
-  top: 38px;
+  top: 34px;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
@@ -1426,7 +1434,7 @@ button,
 .subscription__wrapper {
   position: absolute;
   right: 0;
-  bottom: -180px;
+  bottom: -154px;
 }
 
 .cards {
@@ -1583,12 +1591,36 @@ button,
   position: relative;
 }
 
+.games__group-wrapper {
+  margin-bottom: 19px;
+}
+
 .games__date,
 .games__time {
   display: block;
   font-size: 18px;
   font-weight: 300;
   margin-bottom: 12px;
+}
+.games__date::after,
+.games__time::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  left: 68px;
+  background-color: #ffffff;
+  position: absolute;
+}
+
+.games__date::after {
+  top: 31px;
+  max-width: 64px;
+}
+
+.games__time::after {
+  top: 127px;
+  max-width: 92px;
 }
 
 .games__day,
@@ -1599,7 +1631,7 @@ button,
 }
 
 .games__day {
-  margin-right: 6px;
+  margin-right: 7px;
 }
 
 .games__month,
@@ -1614,7 +1646,7 @@ button,
 }
 
 .games__month {
-  margin-bottom: 5px;
+  top: 40px;
 }
 
 .games__link {
@@ -1638,6 +1670,7 @@ button,
   font-weight: 600;
   line-height: 54px;
   letter-spacing: 1.62px;
+  margin: 0;
   margin-bottom: 45px;
 }
 
@@ -1669,7 +1702,7 @@ button,
 .poster__button {
   border: none;
   position: absolute;
-  top: 50%;
+  top: 49%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
@@ -1682,18 +1715,18 @@ button,
 .poster__text {
   border-radius: 50px;
   background: linear-gradient(97deg, #ED0233 17.6%, #003EB7 95.31%);
-  width: 80px;
-  height: 80px;
+  width: 72px;
+  height: 72px;
   display: block;
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 13px;
+  left: 14px;
 }
 
 .poster__text svg {
   position: absolute;
-  top: -10px;
-  left: -10px;
+  top: -14px;
+  left: -14px;
 }
 
 .advantages {
@@ -1717,7 +1750,7 @@ button,
 .advantages__text-content ul {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 0 60px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -1725,7 +1758,7 @@ button,
   -webkit-column-gap: 360px;
      -moz-column-gap: 360px;
           column-gap: 360px;
-  row-gap: 138px;
+  row-gap: 115px;
   position: relative;
   min-height: 344px;
 }
@@ -1776,7 +1809,7 @@ button,
   color: #ffffff;
   position: absolute;
   left: 50%;
-  top: 59%;
+  top: 58%;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -1788,7 +1821,7 @@ button,
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 70px 34px 86px;
+  padding: 70px 34px;
   max-width: 240px;
   text-align: center;
 }
@@ -1814,7 +1847,7 @@ button,
   font-size: 26px;
   font-weight: 700;
   line-height: 26px;
-  margin-bottom: 42px;
+  margin-bottom: 34px;
 }
 
 .advantages-card__text-content p {
@@ -1848,7 +1881,7 @@ button,
   line-height: 22px;
   font-weight: 400;
   margin: 0;
-  top: 226px;
+  top: 257px;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
@@ -1868,10 +1901,10 @@ button,
   border: none;
 }
 .slider__button--prev {
-  left: -64px;
+  left: -49px;
 }
 .slider__button--next {
-  right: -64px;
+  right: -76px;
   -webkit-transform: translate(-50%, -50%) rotate(180deg);
       -ms-transform: translate(-50%, -50%) rotate(180deg);
           transform: translate(-50%, -50%) rotate(180deg);
@@ -1908,6 +1941,7 @@ button,
 
 .sale {
   padding: 120px 0;
+  text-align: center;
 }
 
 .sale__text-content {
@@ -1923,6 +1957,7 @@ button,
   letter-spacing: 1.62px;
   margin: 0;
   margin-bottom: 70px;
+  display: block;
 }
 
 .sale__text-content ul {
@@ -1934,6 +1969,7 @@ button,
   list-style-type: none;
   margin: 0;
   padding: 0;
+  text-align: left;
 }
 
 .sale__text-content li:first-of-type {
@@ -1952,6 +1988,16 @@ button,
   padding: 45px;
   padding-top: 40px;
   padding-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .sale__wrapper-text-content h3 {
@@ -2018,6 +2064,7 @@ button,
   font-weight: 700;
   margin: 0;
   margin-bottom: 10px;
+  letter-spacing: 1px;
 }
 
 .sale__text-content p {
