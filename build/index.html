@@ -226,14 +226,14 @@
           <h2 class="games__title">Жюри</h2>
           <div class="games__slider slider">
             <div class="slider__wrapper-button">
-              <button class="slider__button slider__button--prev">
+              <button class="slider__button slider__button--prev" type="button">
                 <span class="slider__icon">
                   <svg width="16" height="32">
                     <use xlink:href="img/sprite.svg#icon-arrow"></use>
                   </svg>
                 </span>
               </button>
-              <button class="slider__button slider__button--next">
+              <button class="slider__button slider__button--next" type="button">
                 <span class="slider__icon">
                   <svg width="16" height="32">
                     <use xlink:href="img/sprite.svg#icon-arrow"></use>
@@ -704,6 +704,46 @@
               </li>
             </ul>
           </div> -->
+          </div>
+        </div>
+      </section>
+      <section class="reviews">
+        <div class="reviews__container container">
+          <h2>Отзывы</h2>
+          <div class="reviews__text-content">
+            <div>
+              <h3>Анна Орлова</h3>
+              <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал
+                дружелюбный. Зал
+                просторный, даже в вечернее время нет очередей»</p>
+            </div>
+            <div>
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="img/reviews1x-mobile.webp 1x, img/reviews2x-mobile.webp 2x">
+                <source type="image/webp" srcset="img/reviews1x.webp 1x, img/reviews2x.webp 2x">
+                <source media="(max-width: 767px)" srcset="img/reviews1x-mobile.jpg 1x, img/reviews2x-mobile.jpg 2x"
+                  width="68" height="68">
+                <img src="img/reviews1x.png" srcset="img/reviews2x.png 2x" loading="lazy" alt="Фото посетителя Анна."
+                  width="80" height="80">
+              </picture>
+            </div>
+          </div>
+          <div>
+            <button>
+              <span>
+                <svg width="16" height="32">
+                  <use xlink:href="img/sprite.svg#icon-arrow"></use>
+                </svg>
+              </span>
+            </button>
+            <button>
+              <span>
+                <svg width="16" height="32">
+                  <use xlink:href="img/sprite.svg#icon-arrow"></use>
+                </svg>
+              </span>
+            </button>
           </div>
         </div>
       </section>
