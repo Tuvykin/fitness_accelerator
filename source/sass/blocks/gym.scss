@@ -1,17 +1,26 @@
-.gym {
-  padding: 120px 0 235px;
-}
-
 .gym__container {
   display: flex;
   gap: 145px;
   position: relative;
+  padding-bottom: 235px;
+
+  @include vp-1365 {
+    flex-direction: column;
+    gap: 36px;
+  }
 }
 
 .gym__text-content {
   color: #102654;
   max-width: 355px;
   min-height: 401px;
+
+  @include vp-1365 {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 502px;
+    min-height: auto;
+  }
 }
 
 .gym__text-content h2 {
@@ -22,6 +31,13 @@
   letter-spacing: 1.62px;
   margin: 0;
   margin-bottom: 25px;
+
+  @include vp-1365 {
+    font-size: 42px;
+    line-height: 42px;
+    letter-spacing: 1.26px;
+    margin-bottom: 20px;
+  }
 }
 
 .gym__text-content h3 {
@@ -30,21 +46,41 @@
   font-weight: 400;
   margin: 0;
   margin-bottom: 95px;
+
+  @include vp-1365 {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 36px;
+  }
 }
 
 .gym__text-content p {
   font-weight: 300;
   margin: 0;
+
+  @include vp-1365 {
+    min-width: 502px;
+    margin: 0 auto;
+  }
 }
 
 .gym__text-content p + p {
   margin-top: 8px;
+
+  @include vp-1365 {
+    display: none;
+  }
 }
 
 .gym__wrapper-video {
   position: absolute;
-  top: 288px;
+  top: 408px;
   right: 462px;
+
+  @include vp-1365 {
+    top: 580px;
+    right: 195px;
+  }
 }
 
 .gym__iframe {

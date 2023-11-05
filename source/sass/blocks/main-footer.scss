@@ -1,0 +1,23 @@
+.main-footer {
+  background-color: #030A1A;
+}
+
+.main-footer__container {
+  padding: 0 103px;
+  display: flex;
+  min-height: 105px;
+  align-items: center;
+}
+
+.main-footer__link {
+  padding: 41px 0 40px;
+  margin-right: 255px;
+}
+
+.main-footer__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}

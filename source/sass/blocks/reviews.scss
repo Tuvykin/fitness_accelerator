@@ -1,5 +1,5 @@
-.reviews {
-  padding: 138px 0 102px;
+.reviews__container {
+  padding-top: 138px;
 }
 
 .reviews__container h2 {
@@ -24,6 +24,7 @@
   color: $color-default-white;
   padding: 60px;
   gap: 30px;
+  position: relative;
 }
 
 .reviews__text-content h3 {
@@ -41,4 +42,27 @@
 
 .reviews__text-content div {
   min-width: 80px;
+}
+
+.reviews__wrapper-buttons {
+  position: absolute;
+  top: 132px;
+}
+
+.reviews__wrapper-buttons button {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  border: none;
+
+  &:first-of-type {
+    left: -469px;
+  }
+
+  &:last-of-type {
+    right: -137px;
+    top: -4px;
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
 }

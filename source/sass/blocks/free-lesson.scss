@@ -1,0 +1,22 @@
+.free-lesson__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0;
+}
+
+.free-lesson__wrapper {
+  padding: 60px 103px;
+  padding-right: 170px;
+  background-color: #102654;
+  color: $color-default-white;
+}
+
+.free-lesson__title {
+  font-family: $ff-base;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 54px;
+  letter-spacing: 1.62px;
+  margin: 0;
+  margin-bottom: 33px;
+}

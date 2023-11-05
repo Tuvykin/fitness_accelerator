@@ -1,6 +1,5 @@
 .advantages {
   background-color: #F8F9FC;
-  padding: 120px 0;
   color: #102654;
   text-align: center;
   position: relative;
@@ -64,7 +63,7 @@
   display: block;
 }
 
-.advantages-card__text-content {
+.advantages__card-text-content {
   background-color: #1C3374;
   color: $color-default-white;
   position: absolute;
@@ -79,25 +78,25 @@
   text-align: center;
 }
 
-.advantages-card__text-content div {
+.advantages__card-text-content div {
   display: flex;
   flex-direction: column;
 }
 
-.advantages-card__text-content b {
+.advantages__card-text-content b {
   font-size: 70px;
   font-weight: 700;
   line-height: 70px;
   margin-bottom: 12px;
 }
 
-.advantages-card__text-content span {
+.advantages__card-text-content span {
   font-size: 26px;
   font-weight: 700;
   line-height: 26px;
   margin-bottom: 34px;
 }
 
-.advantages-card__text-content p {
+.advantages__card-text-content p {
   margin: 0;
 }

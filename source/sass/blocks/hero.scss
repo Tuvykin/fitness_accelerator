@@ -1,12 +1,12 @@
 .hero {
   background: linear-gradient(90deg, #1c3477 0%, #1c3477 0.01%, #1a3578 39.11%, #73184b 75.5%, #b4022a 100%);
-  padding-bottom: 120px;
   color: $color-default-white;
 }
 
 .hero__container {
   display: flex;
   gap: 70px;
+  padding-top: 0;
 
   @include vp-1365 {
     display: grid;

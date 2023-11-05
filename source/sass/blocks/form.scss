@@ -1,0 +1,54 @@
+.form__title {
+  font-family: $ff-base;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 54px;
+  letter-spacing: 1.62px;
+  margin: 0;
+  margin-bottom: 33px;
+}
+
+.form__wrapper {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  gap: 30px;
+  margin-bottom: 28px;
+}
+
+.form__button {
+  width: 100%;
+  padding: 25px 54px;
+  border: 2px solid $color-default-white;
+  background-color: transparent;
+  display: block;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: $color-default-white;
+}
+
+.form__input {
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  border: none;
+  min-width: 190px;
+  padding-bottom: 5px;
+  margin-top: 12px;
+}
+
+.form__input::placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  color: $color-default-white;
+}
