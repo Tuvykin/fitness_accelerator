@@ -8,6 +8,11 @@
   margin: 0;
   padding: 0;
   gap: 40px;
+
+  @include vp-1365 {
+    padding: 0 55px;
+    gap: 32px;
+  }
 }
 
 .slider__item {
@@ -27,6 +32,11 @@
   left: 50%;
   transform: translate(-50%, -50%);
   min-width: max-content;
+
+  @include vp-1365 {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .slider__button {
@@ -38,11 +48,21 @@
 
   &--prev {
       left: -49px;
+
+    @include vp-1365 {
+      left: 8px;
+      top: 51%;
+    }
   }
 
   &--next {
     right: -76px;
     transform: translate(-50%, -50%) rotate(180deg);
+
+    @include vp-1365 {
+      right: -20px;
+      top: 49%;
+    }
   }
 }
 

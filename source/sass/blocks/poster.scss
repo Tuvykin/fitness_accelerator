@@ -14,6 +14,10 @@
     display: block;
     position: absolute;
     top: 0;
+
+    @include vp-1365 {
+    min-height: 167px;
+  }
   }
 
   &--del {
@@ -34,6 +38,12 @@
   background-color: transparent;
   min-height: 100px;
   min-width: 100px;
+
+  @include vp-1365 {
+    min-height: 72px;
+    min-width: 72px;
+    top: 48%;
+  }
 }
 
 .poster__text {
@@ -45,10 +55,24 @@
   position: absolute;
   top: 13px;
   left: 14px;
+
+  @include vp-1365 {
+    width: 52px;
+    height: 52px;
+    top: 10px;
+    left: 10px;
+  }
 }
 
 .poster__text svg {
   position: absolute;
   top: -14px;
   left: -14px;
+
+  @include vp-1365 {
+    width: 72px;
+    height: 72px;
+    top: -10px;
+    left: -10px;
+  }
 }

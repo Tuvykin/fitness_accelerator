@@ -41,6 +41,10 @@
   flex-direction: column;
   gap: 50px;
   align-items: flex-end;
+
+  @include vp-1365 {
+    min-width: 185px;
+  }
 }
 
 .hero__wrapper-group-title {
@@ -101,7 +105,8 @@
 
   @include vp-1365 {
     padding: 22px 0;
-    min-width: 185px;
+    text-align: center;
+    width: 100%;
   }
 }
 

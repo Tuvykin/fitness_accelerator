@@ -7,6 +7,7 @@
   @include vp-1365 {
     flex-direction: column;
     gap: 36px;
+    padding-bottom: 183px;
   }
 }
 
@@ -78,11 +79,18 @@
   right: 462px;
 
   @include vp-1365 {
-    top: 580px;
-    right: 195px;
+    top: 585px;
+    right: 252px;
   }
 }
 
 .gym__iframe {
   background-color: #030a1a;
+  width: 364px;
+  height: 228px;
+
+  @include vp-1365 {
+    width: 265px;
+    height: 167px;
+  }
 }

@@ -11,6 +11,14 @@
   grid-template-columns: 1fr 1fr;
   max-width: 500px;
   min-height: 500px;
+
+  @include vp-1365 {
+    max-width: 292px;
+    padding: 45px;
+    padding-top: 40px;
+    min-height: auto;
+    margin-bottom: 100px;
+  }
 }
 
 .games__text {
@@ -22,6 +30,13 @@
   letter-spacing: 2.46px;
   text-transform: uppercase;
   margin-bottom: 43px;
+
+  @include vp-1365 {
+    font-size: 48px;
+    line-height: 46px;
+    letter-spacing: 1.44px;
+    margin-bottom: 22px;
+  }
 }
 
 .games__description {
@@ -31,15 +46,27 @@
   grid-row: 2 / 3;
   grid-column: 1 / -1;
   margin-bottom: 55px;
+
+  @include vp-1365 {
+    margin-bottom: 21px;
+  }
 }
 
 .games__group {
   padding-left: 68px;
   position: relative;
+
+  @include vp-1365 {
+    padding-left: 40px;
+  }
 }
 
 .games__group-wrapper {
   margin-bottom: 19px;
+
+  @include vp-1365 {
+    margin-bottom: 5px;
+  }
 }
 
 .games__date,
@@ -57,18 +84,36 @@
     left: 68px;
     background-color: $color-default-white;
     position: absolute;
+
+    @include vp-1365 {
+      left: 41px;
+    }
+  }
+
+  @include vp-1365 {
+    margin-bottom: 2px;
   }
 }
 
 .games__date::after {
   top: 31px;
   max-width: 64px;
+
+  @include vp-1365 {
+    top: 23px;
+    max-width: 42px;
+  }
 }
 
 
 .games__time::after {
   top: 127px;
   max-width: 92px;
+
+  @include vp-1365 {
+    top: 81px;
+    max-width: 56px;
+  }
 }
 
 
@@ -77,10 +122,19 @@
   font-size: 40px;
   font-weight: 700;
   line-height: 40px;
+
+  @include vp-1365 {
+    font-size: 24px;
+    line-height: 24px;
+  }
 }
 
 .games__day {
   margin-right: 7px;
+
+  @include vp-1365 {
+    margin-right: 3px;
+  }
 }
 
 .games__month,
@@ -88,14 +142,29 @@
   font-size: 14px;
   line-height: 14px;
   position: absolute;
+
+  @include vp-1365 {
+    font-size: 10px;
+    line-height: 10px;
+  }
 }
 
 .games__year {
   top: 58px;
+
+  @include vp-1365 {
+    top: 38px;
+    left: 57px;
+  }
 }
 
 .games__month {
   top: 40px;
+
+  @include vp-1365 {
+    top: 28px;
+    left: 57px;
+  }
 }
 
 .games__link {
@@ -110,6 +179,12 @@
   border: 2px solid $color-default-white;
   max-height: 66px;
   padding: 25px 54px;
+
+  @include vp-1365 {
+    padding: 20px 40px;
+    font-size: 12px;
+    font-weight: 400
+  }
 }
 
 .games__title {
@@ -121,4 +196,12 @@
   letter-spacing: 1.62px;
   margin: 0;
   margin-bottom: 45px;
+
+  @include vp-1365 {
+    font-size: 42px;
+    line-height: 42px;
+    letter-spacing: 1.26px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
 }
