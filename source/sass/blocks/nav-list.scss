@@ -1,6 +1,11 @@
 .nav-list {
   gap: 41px;
   min-width: 432px;
+
+  @include vp-1365 {
+    min-width: 391px;
+    gap: 30px;
+  }
 }
 
 .nav-list__link {

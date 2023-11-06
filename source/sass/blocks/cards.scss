@@ -1,13 +1,12 @@
 .cards {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 40px;
 
   @include vp-1365 {
     grid-template-columns: none;
+    padding: 0;
+    max-width: 440px;
   }
 }
 
@@ -18,10 +17,22 @@
   max-width: 360px;
   position: relative;
 
+  @include vp-1365 {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    max-width: 440px;
+    padding: 65px 117px;
+  }
+
   &--current {
     border: 7px solid;
     padding: 58px 71px;
     border-image: linear-gradient(to right,rgba(209, 10, 66, 1),rgba(0, 53, 159, 1))1;
+
+    @include vp-1365 {
+      padding: 60px 110px;
+    }
   }
 }
 
@@ -31,12 +42,22 @@
   font-weight: 700;
   line-height: 26px;
   margin-bottom: 11px;
+
+  @include vp-1365 {
+    font-size: 24px;
+    line-height: 24px;
+    margin: 0;
+  }
 }
 
 .cards__description {
   margin: 0;
   font-weight: 300;
   margin-bottom: 12px;
+
+  @include vp-1365 {
+    margin: 0;
+  }
 }
 
 .cards__text {
@@ -49,6 +70,10 @@
   left: 50%;
   top: 47%;
   transform: translate(-50%, -50%);
+
+  @include vp-1365 {
+    top: 51%;
+  }
 }
 
 .cards__wrapper {
@@ -57,6 +82,10 @@
   display: flex;
   align-items: baseline;
   gap: 14px;
+
+  @include vp-1365 {
+    margin: 0;
+  }
 }
 
 .cards__wrapper svg {
@@ -94,4 +123,8 @@
   line-height: 12px;
   letter-spacing: 0.6px;
   text-transform: uppercase;
+
+  @include vp-1365 {
+    padding: 20px 42px;
+  }
 }

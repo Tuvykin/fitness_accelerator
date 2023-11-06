@@ -16,6 +16,13 @@
   margin: 0;
   margin-bottom: 70px;
   display: block;
+
+  @include vp-1365 {
+    font-size: 42px;
+    line-height: 42px;
+    letter-spacing: 1.26px;
+    margin-bottom: 40px;
+  }
 }
 
 .sale__text-content ul {
@@ -26,6 +33,19 @@
   margin: 0;
   padding: 0;
   text-align: left;
+
+  @include vp-1365 {
+    gap: 30px;
+  }
+}
+
+.sale__text-content li {
+
+  @include vp-1365 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
 
 .sale__text-content li:first-of-type {
@@ -34,6 +54,13 @@
   grid-template-columns: 1fr 1fr;
   background-color: #ED0233;
   color: $color-default-white;
+
+  @include vp-1365 {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .sale__wrapper-text-content {
@@ -43,6 +70,10 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  @include vp-1365 {
+    max-width: 279px;
+  }
 }
 
 .sale__wrapper-text-content h3 {
@@ -59,6 +90,10 @@
   line-height: 70px;
   margin-bottom: 25px;
   display: block;
+
+  @include vp-1365 {
+    margin-bottom: 20px;
+  }
 }
 
 .sale__wrapper-text-content p {
@@ -110,12 +145,20 @@
   margin: 0;
   margin-bottom: 10px;
   letter-spacing: 1px;
+
+  @include vp-1365 {
+    letter-spacing: 0;
+  }
 }
 
 .sale__text-content p {
   font-weight: 300;
   margin: 0;
   margin-bottom: 67px;
+
+  @include vp-1365 {
+    margin-bottom: 45px;
+  }
 }
 
 .sale__text-content li:not(:first-of-type) {

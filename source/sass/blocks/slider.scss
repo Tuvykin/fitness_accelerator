@@ -4,6 +4,7 @@
 
 .slider__list {
   display: flex;
+  justify-content: center;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -45,6 +46,7 @@
   transform: translate(-50%, -50%);
   background-color: transparent;
   border: none;
+  color: $color-default-white;
 
   &--prev {
       left: -49px;

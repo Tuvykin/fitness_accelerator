@@ -1,5 +1,9 @@
 .reviews__container {
   padding-top: 138px;
+
+  @include vp-1365 {
+    padding-top: 124px;
+  }
 }
 
 .reviews__container h2 {
@@ -12,6 +16,14 @@
   text-align: center;
   margin: 0;
   margin-bottom: 46px;
+
+  @include vp-1365 {
+    font-size: 42px;
+    line-height: 42px;
+    letter-spacing: 1.26px;
+    text-align: center;
+    margin-bottom: 42px;
+  }
 }
 
 .reviews__text-content {
@@ -25,6 +37,11 @@
   padding: 60px;
   gap: 30px;
   position: relative;
+
+  @include vp-1365 {
+    max-width: 580px;
+    padding: 60px 66px;
+  }
 }
 
 .reviews__text-content h3 {
@@ -33,6 +50,12 @@
   line-height: 22px;
   margin: 0;
   margin-bottom: 21px;
+
+  @include vp-1365 {
+    margin-bottom: 13px;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .reviews__text-content p {
@@ -55,14 +78,25 @@
   transform: translate(-50%, -50%);
   background-color: transparent;
   border: none;
+  color: $color-default-white;
 
   &:first-of-type {
     left: -469px;
+
+    @include vp-1365 {
+      left: -475px;
+      top: -6px;
+    }
   }
 
   &:last-of-type {
     right: -137px;
     top: -4px;
     transform: translate(-50%, -50%) rotate(180deg);
+
+    @include vp-1365 {
+      right: -136px;
+      top: -10px;
+    }
   }
 }

@@ -7,11 +7,21 @@
   display: flex;
   min-height: 105px;
   align-items: center;
+
+  @include vp-1365 {
+    padding: 0 45px;
+    justify-content: space-between;
+    min-height: 115px;
+  }
 }
 
 .main-footer__link {
   padding: 41px 0 40px;
   margin-right: 255px;
+
+  @include vp-1365 {
+    margin-right: 44px;
+  }
 }
 
 .main-footer__list {
