@@ -60,7 +60,6 @@
   margin: 0;
 
   @include vp-1365 {
-    min-width: 502px;
     margin: 0 auto;
   }
 }
@@ -75,12 +74,13 @@
 
 .gym__wrapper-video {
   position: absolute;
-  top: 408px;
-  right: 462px;
+  left: 722px;
+  bottom: -4px;
+  transform: translate(-50%, -50%);
 
   @include vp-1365 {
-    top: 587px;
-    right: 252px;
+    left: 50%;
+    bottom: 7px;
   }
 }
 

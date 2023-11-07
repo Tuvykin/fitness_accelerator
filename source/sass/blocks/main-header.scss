@@ -12,6 +12,10 @@
   @include vp-1365 {
     padding: 0 45px;
   }
+
+  @include vp-767 {
+    padding: 0 15px;
+  }
 }
 
 .main-header__link {
@@ -25,6 +29,12 @@
   @include vp-1365 {
     font-size: 24px;
     line-height: 24px;
+  }
+
+  @include vp-767 {
+    font-size: 22px;
+    line-height: 22px;
+    padding: 16px 0;
   }
 }
 

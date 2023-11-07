@@ -47,6 +47,8 @@
   padding-bottom: 13px;
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 50px;
   position: relative;
 
@@ -54,7 +56,6 @@
     content: "";
     display: block;
     width: 100%;
-    max-width: 349px;
     height: 2px;
     background-color: rgba(120, 120, 120, 0.20);
     position: absolute;

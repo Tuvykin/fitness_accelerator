@@ -13,16 +13,29 @@
     grid-template-columns: 1fr 1fr;
     gap: 30px;
   }
+
+  @include vp-767 {
+    display: block;
+  }
 }
 
 .hero__wrapper-description {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 2px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: start;
+  padding: 62px 0;
+  grid-template-rows: min-content;
+  row-gap: 50px;
+  justify-items: end;
 
   @include vp-1365 {
     gap: 0;
+    padding: 31px 0;
+    align-items: end;
+  }
+
+  @include vp-767 {
+    gap: 15px;
   }
 }
 
@@ -34,6 +47,13 @@
   font-size: 14px;
   line-height: 22px;
   text-align: right;
+  max-width: 113px;
+  align-self: center;
+  grid-row: 1 / 3;
+
+  @include vp-1365 {
+    line-height: 20px;
+  }
 }
 
 .hero__wrapper {
@@ -44,6 +64,10 @@
 
   @include vp-1365 {
     min-width: 185px;
+  }
+
+  @include vp-1365 {
+    gap: 60px;
   }
 }
 
@@ -56,6 +80,11 @@
 
   @include vp-1365 {
     max-width: 175px;
+  }
+
+  @include vp-767 {
+    gap: 14px;
+    max-width: 162px;
   }
 }
 
@@ -73,6 +102,14 @@
     line-height: 85px;
     letter-spacing: 0;
   }
+
+  @include vp-767 {
+    leading-trim: both;
+    text-edge: cap;
+    font-size: 62px;
+    line-height: 70px;
+    letter-spacing: 1.86px;
+  }
 }
 
 .hero__subtitle {
@@ -89,10 +126,16 @@
     line-height: 42px;
     letter-spacing: 1.26px;
   }
+
+  @include vp-767 {
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: 0.96px;
+  }
 }
 
 .hero__button {
-  padding: 27px 54px;
+  padding: 25px 54px;
   border: 2px solid $color-default-white;
   background-color: transparent;
   font-size: 12px;
@@ -102,11 +145,13 @@
   text-transform: uppercase;
   color: $color-default-white;
   max-width: 230px;
+  grid-column: 2 / -1;
 
   @include vp-1365 {
-    padding: 22px 0;
+    padding: 20px 0;
     text-align: center;
     width: 100%;
+    max-width: 185px;
   }
 }
 

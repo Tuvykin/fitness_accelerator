@@ -36,6 +36,7 @@
   flex-direction: column;
   gap: 10px;
   justify-content: center;
+  flex-wrap: wrap;
 
   @include vp-1365 {
     flex-direction: row;

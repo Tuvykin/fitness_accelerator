@@ -44,6 +44,23 @@
   flex-direction: row-reverse;
   gap: 30px;
   text-align: left;
+  position: relative;
+
+  &:first-of-type:after,
+  &:nth-of-type(2)::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: rgba(209, 10, 66, 0.20);
+    position: absolute;
+    bottom: -61px;
+    left: 0px;
+
+    @include vp-1365 {
+      display: none;
+    }
+  }
 
   @include vp-1365 {
     gap: 14px;
