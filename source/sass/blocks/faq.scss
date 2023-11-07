@@ -66,35 +66,37 @@
   }
 }
 
+.faq__description-text-content {
+  position: relative;
+}
+
 .faq__description-text-content ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
   display: flex;
   flex-direction: column;
-  gap: 18px;
-  position: relative;
+  gap: 22px;
 
   &::after {
     content: "";
     display: block;
     width: 100%;
-    max-width: 860px;
     height: 1px;
     background: rgba(28, 51, 116, 0.20);
     position: absolute;
     bottom: -20px;
-    left: 430px;
-    transform: translate(-50%,-50%);
+    left: 0;
+    right: 103px;
 
     @include vp-1365 {
-      left: 339px;
       bottom: -25px;
     }
   }
 
   @include vp-1365 {
     gap: 26px;
+    right: 45px;
   }
 }
 
@@ -105,17 +107,16 @@
     content: "";
     display: block;
     width: 100%;
-    max-width: 860px;
     height: 1px;
     background: rgba(28, 51, 116, 0.20);
     position: absolute;
     top: 0;
-    left: 430px;
-    transform: translate(-50%,-50%);
+    left: 0;
+    right: 103px;
 
     @include vp-1365 {
       top: -1px;
-      left: 339px;
+      right: 45px;
     }
   }
 }

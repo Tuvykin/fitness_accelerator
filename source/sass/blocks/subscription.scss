@@ -16,12 +16,9 @@
   align-items: center;
   position: absolute;
   z-index: 1;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  top: 50%;
+  top: 1px;
 
   @include vp-1365 {
-    top: 898px;
     display: block;
     text-align: center;
     padding: 100px 164px;
