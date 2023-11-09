@@ -9,6 +9,11 @@
     gap: 36px;
     padding-bottom: 183px;
   }
+
+  @include vp-767 {
+    gap: 40px;
+    padding: 70px 0;
+  }
 }
 
 .gym__text-content {
@@ -21,6 +26,11 @@
     text-align: center;
     max-width: 502px;
     min-height: auto;
+  }
+
+  @include vp-767 {
+    text-align: left;
+    padding: 0 15px;
   }
 }
 
@@ -39,6 +49,13 @@
     letter-spacing: 1.26px;
     margin-bottom: 20px;
   }
+
+  @include vp-767 {
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: 0.96px;
+    margin-bottom: 13px;
+  }
 }
 
 .gym__text-content h3 {
@@ -53,6 +70,11 @@
     line-height: 20px;
     margin-bottom: 36px;
   }
+
+  @include vp-767 {
+    font-size: 18px;
+    line-height: 20px;
+  }
 }
 
 .gym__text-content p {
@@ -61,6 +83,12 @@
 
   @include vp-1365 {
     margin: 0 auto;
+  }
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 14px;
   }
 }
 
@@ -82,15 +110,26 @@
     left: 50%;
     bottom: 7px;
   }
+
+  @include vp-767 {
+    position: static;
+    transform: none;
+    max-height: 167px;
+  }
 }
 
 .gym__iframe {
   background-color: #030a1a;
   width: 364px;
   height: 228px;
+  border: none;
 
   @include vp-1365 {
     width: 265px;
     height: 167px;
+  }
+
+  @include vp-767 {
+    width: 320px;
   }
 }

@@ -8,6 +8,10 @@
     padding: 0;
     max-width: 440px;
   }
+
+  @include vp-767 {
+    gap: 37px;
+  }
 }
 
 .cards__item {
@@ -25,6 +29,10 @@
     padding: 65px 117px;
   }
 
+  @include vp-767 {
+    padding: 50px 42px;
+  }
+
   &--current {
     border: 7px solid;
     padding: 58px 71px;
@@ -33,6 +41,10 @@
     @include vp-1365 {
       padding: 60px 110px;
     }
+
+  @include vp-767 {
+    padding: 43px 35px;
+  }
   }
 }
 
@@ -48,6 +60,11 @@
     line-height: 24px;
     margin: 0;
   }
+
+  @include vp-1365 {
+    font-size: 22px;
+    line-height: 22px;
+  }
 }
 
 .cards__description {
@@ -57,6 +74,13 @@
 
   @include vp-1365 {
     margin: 0;
+  }
+
+  @include vp-767 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
   }
 }
 
@@ -74,6 +98,11 @@
   @include vp-1365 {
     top: 51%;
   }
+
+  @include vp-767 {
+    font-size: 80px;
+    line-height: 120px;
+  }
 }
 
 .cards__wrapper {
@@ -86,10 +115,22 @@
   @include vp-1365 {
     margin: 0;
   }
+
+  @include vp-767 {
+    padding: 0 20px;
+    gap: 10px;
+    min-height: 120px;
+    min-width: 162px;
+  }
 }
 
 .cards__wrapper svg {
   position: relative;
+
+  @include vp-767 {
+    width: 24px;
+    height: 33px;
+  }
 }
 
 .cards__price {
@@ -100,6 +141,13 @@
   display: block;
   position: relative;
   padding: 54px 0 6px 19px;
+
+
+  @include vp-767 {
+    font-size: 48px;
+    line-height: 72px;
+    padding: 44px 0 4px 15px;
+  }
 }
 
 .cards__button {

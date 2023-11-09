@@ -27,6 +27,10 @@
   &--hidden {
     opacity: 0;
   }
+
+  @include vp-767 {
+    top: 74%;
+  }
 }
 
 .poster__button {
@@ -43,6 +47,10 @@
     min-height: 72px;
     min-width: 72px;
     top: 48%;
+  }
+
+  @include vp-767 {
+    top: 83%;
   }
 }
 

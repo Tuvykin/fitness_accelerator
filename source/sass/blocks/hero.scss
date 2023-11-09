@@ -35,7 +35,10 @@
   }
 
   @include vp-767 {
-    gap: 15px;
+    row-gap: 60px;
+    padding: 0;
+    padding-top: 35px;
+    column-gap: 15px;
   }
 }
 
@@ -51,8 +54,11 @@
   align-self: center;
   grid-row: 1 / 3;
 
-  @include vp-1365 {
+  @include vp-767 {
     line-height: 20px;
+    grid-row: 1 / 2;
+    min-width: 113px;
+    align-self: end;
   }
 }
 
@@ -68,6 +74,7 @@
 
   @include vp-1365 {
     gap: 60px;
+    min-width: 162px;
   }
 }
 
@@ -152,6 +159,11 @@
     text-align: center;
     width: 100%;
     max-width: 185px;
+  }
+
+  @include vp-767 {
+    grid-column: 1 / -1;
+    max-width: none;
   }
 }
 
