@@ -1,19 +1,7 @@
-.jury-swiper {
-  position: relative;
-}
-
 .jury-swiper__list {
-  display: flex;
-  justify-content: center;
   list-style-type: none;
   margin: 0;
   padding: 0;
-  gap: 40px;
-
-  @include vp-1365 {
-    padding: 0 55px;
-    gap: 32px;
-  }
 }
 
 .jury-swiper__item {
@@ -21,9 +9,13 @@
   max-width: 260px;
   max-height: 294px;
 
+  @include vp-1365 {
+    min-width: 268px;
+    min-height: auto;
+  }
+
   @include vp-767 {
     min-width: 226px;
-    min-height: auto;
   }
 }
 
@@ -53,41 +45,51 @@
 
 .jury-swiper__button {
   position: absolute;
-  top: 50%;
+  top: 246px;
   background-color: transparent;
   border: none;
-  color: #102654;
+  color: $color-default-white;
+  width: 16px;
+  height: 32px;
+  top: 252px;
 
-  &--prev {
-      left: 49px;
-
-      @include vp-1365 {
-        left: 8px;
-        top: 51%;
-      }
+  &::after {
+    display: none;
   }
 
-  &--next {
-    right: -76px;
-    transform: translate(-50%, -50%) rotate(180deg);
+  @include vp-1365 {
+    top: 235px;
+  }
+
+  @include vp-767 {
+    top: 223px;
+    width: 10px;
+    height: 19px;
+  }
+
+  &--prev {
+    left: 46px;
 
     @include vp-1365 {
-      right: -20px;
-      top: 49%;
+      left: 44px;
     }
 
     @include vp-767 {
-      right: -14px;
-      top: 50%;
+      left: 18px;
     }
   }
-}
 
-.jury-swiper__button svg {
+  &--next {
+    right: 47px;
+    transform: rotate(180deg);
 
-  @include vp-767 {
-    width: 10px;
-    height: 19px;
+    @include vp-1365 {
+      right: 44px;
+    }
+
+    @include vp-767 {
+      right: 18px;
+    }
   }
 }
 

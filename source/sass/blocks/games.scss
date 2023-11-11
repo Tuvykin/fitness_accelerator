@@ -4,7 +4,6 @@
 
   @include vp-767 {
     flex-direction: column;
-    margin-bottom: 70px;
   }
 }
 
@@ -22,11 +21,9 @@
     padding: 45px;
     padding-top: 40px;
     min-height: auto;
-    margin-bottom: 100px;
   }
 
   @include vp-767 {
-    margin: 0;
     padding: 40px;
     max-width: none;
   }

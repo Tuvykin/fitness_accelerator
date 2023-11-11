@@ -1,6 +1,14 @@
 .jury__container {
-  padding: 0;
-  padding-bottom: 70px;
+  padding: 0 103px;
+  position: relative;
+
+  @include vp-1365 {
+    padding: 0 100px;
+  }
+
+  @include vp-767 {
+    padding: 0 47px;
+  }
 }
 
 .jury__title {

@@ -1277,6 +1277,7 @@ a {
 img,
 video {
   display: block;
+  width: 100%;
   max-width: 100%;
   height: auto;
 }
@@ -2865,7 +2866,6 @@ button,
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-bottom: 70px;
   }
 }
 
@@ -2886,12 +2886,10 @@ button,
     padding: 45px;
     padding-top: 40px;
     min-height: auto;
-    margin-bottom: 100px;
   }
 }
 @media (max-width: 767px) {
   .games__wrapper-description {
-    margin: 0;
     padding: 40px;
     max-width: none;
   }
@@ -3537,27 +3535,10 @@ button,
   }
 }
 
-.jury-swiper {
-  position: relative;
-}
-
 .jury-swiper__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   list-style-type: none;
   margin: 0;
   padding: 0;
-  gap: 40px;
-}
-@media (max-width: 1365px) {
-  .jury-swiper__list {
-    padding: 0 55px;
-    gap: 32px;
-  }
 }
 
 .jury-swiper__item {
@@ -3565,10 +3546,15 @@ button,
   max-width: 260px;
   max-height: 294px;
 }
+@media (max-width: 1365px) {
+  .jury-swiper__item {
+    min-width: 268px;
+    min-height: auto;
+  }
+}
 @media (max-width: 767px) {
   .jury-swiper__item {
     min-width: 226px;
-    min-height: auto;
   }
 }
 
@@ -3604,43 +3590,56 @@ button,
 
 .jury-swiper__button {
   position: absolute;
-  top: 50%;
+  top: 246px;
   background-color: transparent;
   border: none;
-  color: #102654;
+  color: #ffffff;
+  width: 16px;
+  height: 32px;
+  top: 252px;
+}
+.jury-swiper__button::after {
+  display: none;
+}
+@media (max-width: 1365px) {
+  .jury-swiper__button {
+    top: 235px;
+  }
+}
+@media (max-width: 767px) {
+  .jury-swiper__button {
+    top: 223px;
+    width: 10px;
+    height: 19px;
+  }
 }
 .jury-swiper__button--prev {
-  left: 49px;
+  left: 46px;
 }
 @media (max-width: 1365px) {
   .jury-swiper__button--prev {
-    left: 8px;
-    top: 51%;
+    left: 44px;
+  }
+}
+@media (max-width: 767px) {
+  .jury-swiper__button--prev {
+    left: 18px;
   }
 }
 .jury-swiper__button--next {
-  right: -76px;
-  -webkit-transform: translate(-50%, -50%) rotate(180deg);
-      -ms-transform: translate(-50%, -50%) rotate(180deg);
-          transform: translate(-50%, -50%) rotate(180deg);
+  right: 47px;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 @media (max-width: 1365px) {
   .jury-swiper__button--next {
-    right: -20px;
-    top: 49%;
+    right: 44px;
   }
 }
 @media (max-width: 767px) {
   .jury-swiper__button--next {
-    right: -14px;
-    top: 50%;
-  }
-}
-
-@media (max-width: 767px) {
-  .jury-swiper__button svg {
-    width: 10px;
-    height: 19px;
+    right: 18px;
   }
 }
 
@@ -4987,8 +4986,18 @@ button,
 }
 
 .jury__container {
-  padding: 0;
-  padding-bottom: 70px;
+  padding: 0 103px;
+  position: relative;
+}
+@media (max-width: 1365px) {
+  .jury__container {
+    padding: 0 100px;
+  }
+}
+@media (max-width: 767px) {
+  .jury__container {
+    padding: 0 47px;
+  }
 }
 
 .jury__title {
@@ -5018,27 +5027,10 @@ button,
   }
 }
 
-.jury-swiper {
-  position: relative;
-}
-
 .jury-swiper__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   list-style-type: none;
   margin: 0;
   padding: 0;
-  gap: 40px;
-}
-@media (max-width: 1365px) {
-  .jury-swiper__list {
-    padding: 0 55px;
-    gap: 32px;
-  }
 }
 
 .jury-swiper__item {
@@ -5046,10 +5038,15 @@ button,
   max-width: 260px;
   max-height: 294px;
 }
+@media (max-width: 1365px) {
+  .jury-swiper__item {
+    min-width: 268px;
+    min-height: auto;
+  }
+}
 @media (max-width: 767px) {
   .jury-swiper__item {
     min-width: 226px;
-    min-height: auto;
   }
 }
 
@@ -5085,43 +5082,56 @@ button,
 
 .jury-swiper__button {
   position: absolute;
-  top: 50%;
+  top: 246px;
   background-color: transparent;
   border: none;
-  color: #102654;
+  color: #ffffff;
+  width: 16px;
+  height: 32px;
+  top: 252px;
+}
+.jury-swiper__button::after {
+  display: none;
+}
+@media (max-width: 1365px) {
+  .jury-swiper__button {
+    top: 235px;
+  }
+}
+@media (max-width: 767px) {
+  .jury-swiper__button {
+    top: 223px;
+    width: 10px;
+    height: 19px;
+  }
 }
 .jury-swiper__button--prev {
-  left: 49px;
+  left: 46px;
 }
 @media (max-width: 1365px) {
   .jury-swiper__button--prev {
-    left: 8px;
-    top: 51%;
+    left: 44px;
+  }
+}
+@media (max-width: 767px) {
+  .jury-swiper__button--prev {
+    left: 18px;
   }
 }
 .jury-swiper__button--next {
-  right: -76px;
-  -webkit-transform: translate(-50%, -50%) rotate(180deg);
-      -ms-transform: translate(-50%, -50%) rotate(180deg);
-          transform: translate(-50%, -50%) rotate(180deg);
+  right: 47px;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 @media (max-width: 1365px) {
   .jury-swiper__button--next {
-    right: -20px;
-    top: 49%;
+    right: 44px;
   }
 }
 @media (max-width: 767px) {
   .jury-swiper__button--next {
-    right: -14px;
-    top: 50%;
-  }
-}
-
-@media (max-width: 767px) {
-  .jury-swiper__button svg {
-    width: 10px;
-    height: 19px;
+    right: 18px;
   }
 }
 
