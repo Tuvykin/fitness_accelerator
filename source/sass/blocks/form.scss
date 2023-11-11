@@ -27,6 +27,12 @@
     margin-bottom: 30px;
     justify-content: space-between;
   }
+
+  @include vp-767 {
+    flex-direction: column;
+    margin-bottom: 40px;
+    gap: 35px;
+  }
 }
 
 .form__item {
@@ -66,6 +72,10 @@
   @include vp-1365 {
     padding: 20px 195px;
   }
+
+  @include vp-1365 {
+    padding: 20px 104px;
+  }
 }
 
 .form__input {
@@ -81,6 +91,11 @@
     min-width: 221px;
     margin: 0;
   }
+
+  @include vp-767 {
+    min-width: 290px;
+    padding-bottom: 4px;
+  }
 }
 
 .form__input::placeholder {
@@ -93,5 +108,10 @@
     font-size: 16px;
     font-weight: 300;
     line-height: 24px;
+  }
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 22px;
   }
 }

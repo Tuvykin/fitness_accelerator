@@ -1,12 +1,11 @@
-.slider {
+.jury-swiper {
   position: relative;
 }
 
-.slider__list {
+.jury-swiper__list {
   display: flex;
   justify-content: center;
   list-style-type: none;
-  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   gap: 40px;
@@ -17,10 +16,10 @@
   }
 }
 
-.slider__item {
+.jury-swiper__item {
   position: relative;
-  min-width: 260px;
-  min-height: 294px;
+  max-width: 260px;
+  max-height: 294px;
 
   @include vp-767 {
     min-width: 226px;
@@ -28,7 +27,7 @@
   }
 }
 
-.slider__title {
+.jury-swiper__title {
   position: absolute;
   color: $color-default-white;
   font-size: 22px;
@@ -52,21 +51,20 @@
   }
 }
 
-.slider__button {
+.jury-swiper__button {
   position: absolute;
   top: 50%;
-  transform: translate(-50%, -50%);
   background-color: transparent;
   border: none;
-  color: $color-default-white;
+  color: #102654;
 
   &--prev {
-      left: -49px;
+      left: 49px;
 
-    @include vp-1365 {
-      left: 8px;
-      top: 51%;
-    }
+      @include vp-1365 {
+        left: 8px;
+        top: 51%;
+      }
   }
 
   &--next {
@@ -85,7 +83,7 @@
   }
 }
 
-.slider__button svg {
+.jury-swiper__button svg {
 
   @include vp-767 {
     width: 10px;
@@ -93,21 +91,21 @@
   }
 }
 
-.slider__wrapper-card {
+.jury-swiper__wrapper-card {
   display: none;
 }
 
-.slider__item:hover .slider__wrapper-card {
+.jury-swiper__item:hover .jury-swiper__wrapper-card {
   display: block;
   position: absolute;
   top: 75px;
 }
 
-.slider__item:hover .slider__title {
+.jury-swiper__item:hover .jury-swiper__title {
   top: 45px;
 }
 
-.slider__card-list {
+.jury-swiper__card-list {
   margin: 0;
   padding: 50px;
   padding-top: 33px;
@@ -115,7 +113,7 @@
   list-style-type: disc;
 }
 
-.slider__text-card {
+.jury-swiper__text-card {
   color: #B6BDCC;
   font-weight: 300;
   text-align: center;

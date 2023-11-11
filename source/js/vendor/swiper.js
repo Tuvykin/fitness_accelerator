@@ -1,7 +1,7 @@
 const swiper = () => {
   /**
    * Swiper 8.4.7
-   * Most modern mobile touch slider and framework with hardware accelerated transitions
+   * Most modern mobile touch jury-swiper and framework with hardware accelerated transitions
    * https://swiperjs.com
    *
    * Copyright 2014-2023 Vladimir Kharlampidi
@@ -2585,7 +2585,7 @@ const swiper = () => {
 
       if (runCallbacks && activeIndex !== previousIndex) {
         if (dir === 'reset') {
-          swiper.emit(`slideResetTransition${step}`);
+          swiper.emit(`jury-swiperesetTransition${step}`);
           return;
         }
 
@@ -3100,7 +3100,7 @@ const swiper = () => {
       slideToLoop,
       slideNext,
       slidePrev,
-      slideReset,
+      jury-swipereset,
       slideToClosest,
       slideToClickedSlide
     };
@@ -3519,10 +3519,10 @@ const swiper = () => {
           swiper.setGrabCursor(true);
         }
 
-        swiper.emit('sliderFirstMove', e);
+        swiper.emit('jury-swiperFirstMove', e);
       }
 
-      swiper.emit('sliderMove', e);
+      swiper.emit('jury-swiperMove', e);
       data.isMoved = true;
       let diff = swiper.isHorizontal() ? diffX : diffY;
       touches.diff = diff;
@@ -4218,8 +4218,8 @@ const swiper = () => {
 
       if (slidesOffsetBefore) {
         const lastSlideIndex = swiper.slides.length - 1;
-        const lastSlideRightEdge = swiper.slidesGrid[lastSlideIndex] + swiper.slidesSizesGrid[lastSlideIndex] + slidesOffsetBefore * 2;
-        swiper.isLocked = swiper.size > lastSlideRightEdge;
+        const lastjury-swiperightEdge = swiper.slidesGrid[lastSlideIndex] + swiper.slidesSizesGrid[lastSlideIndex] + slidesOffsetBefore * 2;
+        swiper.isLocked = swiper.size > lastjury-swiperightEdge;
       } else {
         swiper.isLocked = swiper.snapGrid.length === 1;
       }
@@ -5595,7 +5595,7 @@ const swiper = () => {
         swiper.mouseEntered = false;
       }
 
-      function animateSlider(newEvent) {
+      function animatejury-swiper(newEvent) {
         if (swiper.params.mousewheel.thresholdDelta && newEvent.delta < swiper.params.mousewheel.thresholdDelta) {
           // Prevent if delta of wheel scroll delta is below configured threshold
           return false;
@@ -5605,7 +5605,7 @@ const swiper = () => {
           // Prevent if time between scrolls is below configured threshold
           return false;
         } // If the movement is NOT big enough and
-        // if the last time the user scrolled was too close to the current one (avoid continuously triggering the slider):
+        // if the last time the user scrolled was too close to the current one (avoid continuously triggering the jury-swiper):
         //   Don't go any further (avoid insignificant scroll movement).
 
 
@@ -5613,15 +5613,15 @@ const swiper = () => {
           // Return false as a default
           return true;
         } // If user is scrolling towards the end:
-        //   If the slider hasn't hit the latest slide or
-        //   if the slider is a loop and
-        //   if the slider isn't moving right now:
+        //   If the jury-swiper hasn't hit the latest slide or
+        //   if the jury-swiper is a loop and
+        //   if the jury-swiper isn't moving right now:
         //     Go to next slide and
         //     emit a scroll event.
         // Else (the user is scrolling towards the beginning) and
-        // if the slider hasn't hit the first slide or
-        // if the slider is a loop and
-        // if the slider isn't moving right now:
+        // if the jury-swiper hasn't hit the first slide or
+        // if the jury-swiper is a loop and
+        // if the jury-swiper isn't moving right now:
         //   Go to prev slide and
         //   emit a scroll event.
 
@@ -5722,16 +5722,16 @@ const swiper = () => {
           recentWheelEvents.push(newEvent); // If there is at least one previous recorded event:
           //   If direction has changed or
           //   if the scroll is quicker than the previous one:
-          //     Animate the slider.
+          //     Animate the jury-swiper.
           // Else (this is the first time the wheel is moved):
-          //     Animate the slider.
+          //     Animate the jury-swiper.
 
           if (prevEvent) {
             if (newEvent.direction !== prevEvent.direction || newEvent.delta > prevEvent.delta || newEvent.time > prevEvent.time + 150) {
-              animateSlider(newEvent);
+              animatejury-swiper(newEvent);
             }
           } else {
-            animateSlider(newEvent);
+            animatejury-swiper(newEvent);
           } // If it's time to release the scroll:
           //   Return now so you don't hit the preventDefault.
 
@@ -8209,7 +8209,7 @@ const swiper = () => {
           containerMessage: null,
           containerRoleDescriptionMessage: null,
           itemRoleDescriptionMessage: null,
-          slideRole: 'group',
+          jury-swiperole: 'group',
           id: null
         }
       });
@@ -8419,8 +8419,8 @@ const swiper = () => {
           addElRoleDescription($(swiper.slides), params.itemRoleDescriptionMessage);
         }
 
-        if (params.slideRole) {
-          addElRole($(swiper.slides), params.slideRole);
+        if (params.jury-swiperole) {
+          addElRole($(swiper.slides), params.jury-swiperole);
         }
 
         const slidesLength = swiper.params.loop ? swiper.slides.filter(el => !el.classList.contains(swiper.params.slideDuplicateClass)).length : swiper.slides.length;
@@ -8993,7 +8993,7 @@ const swiper = () => {
           }
         }
       });
-      on('sliderFirstMove', () => {
+      on('jury-swiperFirstMove', () => {
         if (swiper.autoplay.running) {
           if (swiper.params.autoplay.disableOnInteraction) {
             stop();
@@ -10353,7 +10353,7 @@ const swiper = () => {
           let rotateX = isHorizontal ? 0 : rotate * offsetMultiplier; // var rotateZ = 0
 
           let translateZ = -translate * Math.abs(offsetMultiplier);
-          let stretch = params.stretch; // Allow percentage to make a relative stretch for responsive sliders
+          let stretch = params.stretch; // Allow percentage to make a relative stretch for responsive jury-swipers
 
           if (typeof stretch === 'string' && stretch.indexOf('%') !== -1) {
             stretch = parseFloat(params.stretch) / 100 * slideSize;
@@ -10577,7 +10577,7 @@ const swiper = () => {
           slideShadows: true,
           transformEl: null,
           rotate: true,
-          perSlideRotate: 2,
+          perjury-swiperotate: 2,
           perSlideOffset: 8
         }
       });
@@ -10612,7 +10612,7 @@ const swiper = () => {
           let tY = 0;
           const tZ = -100 * Math.abs(progress);
           let scale = 1;
-          let rotate = -params.perSlideRotate * progress;
+          let rotate = -params.perjury-swiperotate * progress;
           let tXAdd = params.perSlideOffset - Math.abs(progress) * 0.75;
           const slideIndex = swiper.virtual && swiper.params.virtual.enabled ? swiper.virtual.from + i : i;
           const isSwipeToNext = (slideIndex === activeIndex || slideIndex === activeIndex - 1) && progress > 0 && progress < 1 && (isTouched || swiper.params.cssMode) && currentTranslate < startTranslate;

@@ -6,10 +6,20 @@
     min-width: 391px;
     gap: 30px;
   }
+
+  @include vp-767 {
+    min-width: 290px;
+    column-gap: 35px;
+    row-gap: 16px;
+  }
 }
 
 .nav-list__link {
   color: $color-default-white;
   font-size: 14px;
   line-height: 22px;
+
+  @include vp-767 {
+    line-height: 20px;
+  }
 }

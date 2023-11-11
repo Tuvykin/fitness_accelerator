@@ -4,6 +4,10 @@
   @include vp-1365 {
     padding-top: 124px;
   }
+
+  @include vp-1365 {
+    padding: 70px 47px;
+  }
 }
 
 .reviews__container h2 {
@@ -24,6 +28,13 @@
     text-align: center;
     margin-bottom: 42px;
   }
+
+  @include vp-767 {
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: 0.96px;
+    margin-bottom: 46px;
+  }
 }
 
 .reviews__text-content {
@@ -42,6 +53,12 @@
     max-width: 580px;
     padding: 60px 66px;
   }
+
+  @include vp-767 {
+    padding: 30px 25px;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
 }
 
 .reviews__text-content h3 {
@@ -56,11 +73,22 @@
     font-size: 20px;
     line-height: 20px;
   }
+
+  @include vp-767 {
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 16px;
+  }
 }
 
 .reviews__text-content p {
   margin: 0;
   font-weight: 300;
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 22px;
+  }
 }
 
 .reviews__text-content div {
@@ -87,6 +115,11 @@
       left: -475px;
       top: -6px;
     }
+
+    @include vp-767 {
+      left: -47px;
+      top: 34px;
+    }
   }
 
   &:last-of-type {
@@ -97,6 +130,11 @@
     @include vp-1365 {
       right: -136px;
       top: -10px;
+    }
+
+    @include vp-767 {
+      left: 172px;
+      top: 30px;
     }
   }
 }
