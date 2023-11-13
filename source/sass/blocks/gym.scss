@@ -73,7 +73,7 @@
 
   @include vp-767 {
     font-size: 18px;
-    line-height: 20px;
+    margin-bottom: 38px;
   }
 }
 
@@ -88,7 +88,7 @@
   @include vp-767 {
     font-size: 14px;
     line-height: 22px;
-    margin-bottom: 14px;
+    margin-bottom: 12px;
   }
 }
 
@@ -131,5 +131,13 @@
 
   @include vp-767 {
     width: 320px;
+  }
+}
+
+.gym__text-content br {
+  display: none;
+
+  @include vp-767 {
+    display: block;
   }
 }

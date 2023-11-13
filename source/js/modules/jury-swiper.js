@@ -15,11 +15,13 @@ export const initJurySlider = () => {
       768: {
         slidesPerView: 2,
         spaceBetween: 32,
+        initialSlide: 2,
       },
       // when window width is >= 1366px
       1366: {
         slidesPerView: 4,
         spaceBetween: 40,
+        initialSlide: 3,
       },
     },
     navigation: {
