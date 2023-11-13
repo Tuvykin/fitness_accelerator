@@ -18,7 +18,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
   setGymVideo();
   setSubscription();
-  initJurySlider(true);
+  initJurySlider();
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана

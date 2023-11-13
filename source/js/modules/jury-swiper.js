@@ -1,11 +1,10 @@
-export const initJurySlider = (isLoop) => {
+export const initJurySlider = () => {
   const swiperWrapper = document.querySelector('[jury-swiper]');
   const buttonPrev = document.querySelector('[jury-swiper-btn-prev]');
   const buttonNext = document.querySelector('[jury-swiper-btn-next]');
 
   return new window.Swiper(swiperWrapper, {
-    loop: isLoop,
-    slidesPerView: 4,
+    loop: true,
     breakpoints: {
       // when window width is >= 320px
       320: {

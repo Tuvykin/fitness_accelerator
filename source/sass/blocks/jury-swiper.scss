@@ -5,13 +5,10 @@
 }
 
 .jury-swiper__item {
-  position: relative;
   max-width: 260px;
-  max-height: 294px;
 
   @include vp-1365 {
     min-width: 268px;
-    min-height: auto;
   }
 
   @include vp-767 {
