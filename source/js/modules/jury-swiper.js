@@ -8,7 +8,7 @@ export const initJurySlider = () => {
     breakpoints: {
       // when window width is >= 320px
       320: {
-        slidesPerView: 1,
+        slidesPerView: 3,
         spaceBetween: 20,
       },
       // when window width is >= 768px
@@ -21,7 +21,7 @@ export const initJurySlider = () => {
       1366: {
         slidesPerView: 4,
         spaceBetween: 40,
-        initialSlide: 3,
+        initialSlide: 4,
       },
     },
     navigation: {

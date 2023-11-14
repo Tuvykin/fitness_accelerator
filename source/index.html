@@ -22,9 +22,9 @@
   <link rel="preload" href="css/style.min.css" as="style">
   <link rel="preload" href="js/vendor.min.js" as="script">
   <link rel="preload" href="js/main.min.js" as="script">
-  <link rel="preload" as="image" imagesrcset="img/hero1x.webp, img/hero2x.webp 2x" media="(min-width: 1366px)">
-  <link rel="preload" as="image" imagesrcset="img/hero-tablet1x.webp, img/hero-tablet2x.webp 2x"
-    media="(min-width: 768px) and (max-width: 1365px)">
+  <!-- <link rel="preload" as="image" imagesrcset="img/hero1x.webp, img/hero2x.webp 2x" media="(min-width: 1366px)"> -->
+  <!-- <link rel="preload" as="image" imagesrcset="img/hero-tablet1x.webp, img/hero-tablet2x.webp 2x"
+    media="(min-width: 768px) and (max-width: 1365px)"> -->
 </head>
 
 <body>
@@ -99,8 +99,7 @@
             </picture>
           </div>
           <div class="gym__wrapper-video" data-wrapper-video>
-            <iframe width="364" height="228" src="https://www.youtube.com/embed/9TZXsZItgdw?si=0B9v5wzP4K4sj-55"
-              title="YouTube video player" frameborder="0"
+            <iframe width="364" height="228" src="#" title="YouTube video player" frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen data-gym-iframe>
             </iframe>
@@ -490,7 +489,7 @@
                   <span>машин</span>
                 </div>
               </li>
-              <li class="advantages__item">
+              <li class="advantages__item advantages__item--promo">
                 <div class="advantages__wrapper">
                   <b>100</b>
                   <span>Тренажеров</span>
@@ -593,57 +592,115 @@
               <div class="faq__description-text-content" data-tabs="element">
                 <ul data-accordion="parent">
                   <li class="is-active" data-accordion="element">
-                    <div data-accordion="button">
+                    <div class="faq__description-wrapper" data-accordion="button">
                       <h3>Как стать членом фитнес‑центра?</h3>
-                      <button></button>
+                      <button class="faq__button">
+                        <span class="faq__button-wrapper faq__button-wrapper--minus">
+                          <svg width="20" height="2">
+                            <use xlink:href="img/sprite.svg#icon-faq-minus"></use>
+                          </svg>
+                        </span>
+                        <span class="faq__button-wrapper faq__button-wrapper--plus">
+                          <svg width="20" height="20">
+                            <use xlink:href="img/sprite.svg#icon-faq-plus"></use>
+                          </svg>
+                        </span>
+                      </button>
                     </div>
                     <p data-accordion="content">При первом посещении и покупке абонемента, необходимо заполнить<br>
                       анкету и
                       подписать договор.
                       При покупке абонемента
-                      онлайн, анкета также заполняется онлайн и договор придет<br> вам на почту.</p>
+                      онлайн, анкета также заполняется онлайн и договор придет<br> вам на почту.
+                    </p>
                   </li>
                   <li data-accordion="element">
-                    <div data-accordion="button">
+                    <div class="faq__description-wrapper" data-accordion="button">
                       <h3>Где можно посмотреть расписание?</h3>
-                      <button></button>
+                      <button class="faq__button">
+                        <span class="faq__button-wrapper faq__button-wrapper--minus">
+                          <svg width="20" height="2">
+                            <use xlink:href="img/sprite.svg#icon-faq-minus"></use>
+                          </svg>
+                        </span>
+                        <span class="faq__button-wrapper faq__button-wrapper--plus">
+                          <svg width="20" height="20">
+                            <use xlink:href="img/sprite.svg#icon-faq-plus"></use>
+                          </svg>
+                        </span>
+                      </button>
                     </div>
                     <p data-accordion="content">При первом посещении и покупке абонемента, необходимо заполнить<br>
                       анкету и
                       подписать договор.
                       При покупке абонемента
-                      онлайн, анкета также заполняется онлайн и договор придет<br> вам на почту.</p>
+                      онлайн, анкета также заполняется онлайн и договор придет<br> вам на почту.
+                    </p>
                   </li>
                   <li data-accordion="element">
-                    <div data-accordion="button">
+                    <div class="faq__description-wrapper" data-accordion="button">
                       <h3>Есть кулеры в центре? Предоставляются полотенца?</h3>
-                      <button></button>
+                      <button class="faq__button">
+                        <span class="faq__button-wrapper faq__button-wrapper--minus">
+                          <svg width="20" height="2">
+                            <use xlink:href="img/sprite.svg#icon-faq-minus"></use>
+                          </svg>
+                        </span>
+                        <span class="faq__button-wrapper faq__button-wrapper--plus">
+                          <svg width="20" height="20">
+                            <use xlink:href="img/sprite.svg#icon-faq-plus"></use>
+                          </svg>
+                        </span>
+                      </button>
                     </div>
                     <p data-accordion="content">При первом посещении и покупке абонемента, необходимо заполнить<br>
                       анкету и
                       подписать договор.
                       При покупке абонемента
-                      онлайн, анкета также заполняется онлайн и договор придет<br> вам на почту.</p>
+                      онлайн, анкета также заполняется онлайн и договор придет<br> вам на почту.
+                    </p>
                   </li>
                   <li data-accordion="element">
-                    <div data-accordion="button">
+                    <div class="faq__description-wrapper" data-accordion="button">
                       <h3>Сколько тренеров работает в клубе и какова<br> их квалификация?</h3>
-                      <button></button>
+                      <button class="faq__button">
+                        <span class="faq__button-wrapper faq__button-wrapper--minus">
+                          <svg width="20" height="2">
+                            <use xlink:href="img/sprite.svg#icon-faq-minus"></use>
+                          </svg>
+                        </span>
+                        <span class="faq__button-wrapper faq__button-wrapper--plus">
+                          <svg width="20" height="20">
+                            <use xlink:href="img/sprite.svg#icon-faq-plus"></use>
+                          </svg>
+                        </span>
+                      </button>
                     </div>
                     <p data-accordion="content">При первом посещении и покупке абонемента, необходимо заполнить<br>
                       анкету и
                       подписать договор.
                       При покупке абонемента
-                      онлайн, анкета также заполняется онлайн и договор придет<br> вам на почту.</p>
+                      онлайн, анкета также заполняется онлайн и договор придет<br> вам на почту.
+                    </p>
                   </li>
                 </ul>
               </div>
               <div class="faq__description-text-content" data-tabs="element">
                 <ul data-accordion="parent">
                   <li class="is-active" data-accordion="element">
-                    <div>
+                    <div class="faq__description-wrapper" data-accordion="button">
                       <h3>Занятия с тренером входят в абонемент?</h3>
-                      <button data-accordion="button">
+                      <button class="faq__button">
+                        <span class="faq__button-wrapper faq__button-wrapper--minus">
+                          <svg width="20" height="2">
+                            <use xlink:href="img/sprite.svg#icon-faq-minus"></use>
+                          </svg>
+                        </span>
+                        <span class="faq__button-wrapper faq__button-wrapper--plus">
+                          <svg width="20" height="20">
+                            <use xlink:href="img/sprite.svg#icon-faq-plus"></use>
+                          </svg>
+                        </span>
                       </button>
                     </div>
                     <p data-accordion="content">При посещении тренажерного зала вам необходимо
@@ -652,12 +709,23 @@
                       всегда
                       присутствует дежурный
                       тренер, которому можно задать вопрос, получить небольшую консультацию по тренажеру или технике
-                      выполнения упражнения.</p>
+                      выполнения упражнения.
+                    </p>
                   </li>
                   <li data-accordion="element">
-                    <div>
+                    <div class="faq__description-wrapper" data-accordion="button">
                       <h3>Можно ли заморозить абонемент?</h3>
-                      <button data-accordion="button">
+                      <button class="faq__button">
+                        <span class="faq__button-wrapper faq__button-wrapper--minus">
+                          <svg width="20" height="2">
+                            <use xlink:href="img/sprite.svg#icon-faq-minus"></use>
+                          </svg>
+                        </span>
+                        <span class="faq__button-wrapper faq__button-wrapper--plus">
+                          <svg width="20" height="20">
+                            <use xlink:href="img/sprite.svg#icon-faq-plus"></use>
+                          </svg>
+                        </span>
                       </button>
                     </div>
                     <p data-accordion="content">При посещении тренажерного зала вам необходимо оплатить занятия с
@@ -665,12 +733,23 @@
                       всегда
                       присутствует дежурный
                       тренер, которому можно задать вопрос, получить небольшую консультацию по тренажеру или технике
-                      выполнения упражнения.</p>
+                      выполнения упражнения.
+                    </p>
                   </li>
                   <li data-accordion="element">
-                    <div>
+                    <div class="faq__description-wrapper" data-accordion="button">
                       <h3>Есть ли лимит по посещениям тренажерного зала и групповых занятий?</h3>
-                      <button data-accordion="button">
+                      <button class="faq__button">
+                        <span class="faq__button-wrapper faq__button-wrapper--minus">
+                          <svg width="20" height="2">
+                            <use xlink:href="img/sprite.svg#icon-faq-minus"></use>
+                          </svg>
+                        </span>
+                        <span class="faq__button-wrapper faq__button-wrapper--plus">
+                          <svg width="20" height="20">
+                            <use xlink:href="img/sprite.svg#icon-faq-plus"></use>
+                          </svg>
+                        </span>
                       </button>
                     </div>
                     <p data-accordion="content">При посещении тренажерного зала вам необходимо оплатить занятия с
@@ -678,12 +757,23 @@
                       всегда
                       присутствует дежурный
                       тренер, которому можно задать вопрос, получить небольшую консультацию по тренажеру или технике
-                      выполнения упражнения.</p>
+                      выполнения упражнения.
+                    </p>
                   </li>
                   <li data-accordion="element">
-                    <div>
+                    <div class="faq__description-wrapper" data-accordion="button">
                       <h3>Что такое семейный доступ и доступ для друзей?</h3>
-                      <button data-accordion="button">
+                      <button class="faq__button">
+                        <span class="faq__button-wrapper faq__button-wrapper--minus">
+                          <svg width="20" height="2">
+                            <use xlink:href="img/sprite.svg#icon-faq-minus"></use>
+                          </svg>
+                        </span>
+                        <span class="faq__button-wrapper faq__button-wrapper--plus">
+                          <svg width="20" height="20">
+                            <use xlink:href="img/sprite.svg#icon-faq-plus"></use>
+                          </svg>
+                        </span>
                       </button>
                     </div>
                     <p data-accordion="content">При посещении тренажерного зала вам необходимо оплатить занятия с
@@ -691,60 +781,115 @@
                       всегда
                       присутствует дежурный
                       тренер, которому можно задать вопрос, получить небольшую консультацию по тренажеру или технике
-                      выполнения упражнения.</p>
+                      выполнения упражнения.
+                    </p>
                   </li>
                 </ul>
               </div>
               <div class="faq__description-text-content" data-tabs="element">
                 <ul data-accordion="parent">
                   <li class="is-active" data-accordion="element">
-                    <div>
+                    <div class="faq__description-wrapper" data-accordion="button">
                       <h3>Предлагает ли клуб услуги по консультированию по вопросам питания?</h3>
-                      <button data-accordion="button">
+                      <button class="faq__button">
+                        <span class="faq__button-wrapper faq__button-wrapper--minus">
+                          <svg width="20" height="2">
+                            <use xlink:href="img/sprite.svg#icon-faq-minus"></use>
+                          </svg>
+                        </span>
+                        <span class="faq__button-wrapper faq__button-wrapper--plus">
+                          <svg width="20" height="20">
+                            <use xlink:href="img/sprite.svg#icon-faq-plus"></use>
+                          </svg>
+                        </span>
                       </button>
                     </div>
                     <p data-accordion="content">Да. Вы можете обратиться как к своему тренеру, так и к нашему
                       нутрициологу. Специалист уточнит ваши данные, цели<br> и
-                      предложит программу питания.</p>
+                      предложит программу питания.
+                    </p>
                   </li>
                   <li data-accordion="element">
-                    <div>
+                    <div class="faq__description-wrapper" data-accordion="button">
                       <h3>Проводятся ли в клубе какие-либо мероприятия или соревнования?</h3>
-                      <button data-accordion="button">
+                      <button class="faq__button">
+                        <span class="faq__button-wrapper faq__button-wrapper--minus">
+                          <svg width="20" height="2">
+                            <use xlink:href="img/sprite.svg#icon-faq-minus"></use>
+                          </svg>
+                        </span>
+                        <span class="faq__button-wrapper faq__button-wrapper--plus">
+                          <svg width="20" height="20">
+                            <use xlink:href="img/sprite.svg#icon-faq-plus"></use>
+                          </svg>
+                        </span>
                       </button>
                     </div>
                     <p data-accordion="content">Да. Вы можете обратиться как к своему тренеру, так и к нашему
                       нутрициологу. Специалист уточнит ваши данные, цели<br> и
-                      предложит программу питания.</p>
+                      предложит программу питания.
+                    </p>
                   </li>
                   <li data-accordion="element">
-                    <div>
+                    <div class="faq__description-wrapper" data-accordion="button">
                       <h3>Можно ли приобрести в центре спортивное питание?</h3>
-                      <button data-accordion="button">
+                      <button class="faq__button">
+                        <span class="faq__button-wrapper faq__button-wrapper--minus">
+                          <svg width="20" height="2">
+                            <use xlink:href="img/sprite.svg#icon-faq-minus"></use>
+                          </svg>
+                        </span>
+                        <span class="faq__button-wrapper faq__button-wrapper--plus">
+                          <svg width="20" height="20">
+                            <use xlink:href="img/sprite.svg#icon-faq-plus"></use>
+                          </svg>
+                        </span>
                       </button>
                     </div>
                     <p data-accordion="content">Да. Вы можете обратиться как к своему тренеру, так и к нашему
                       нутрициологу. Специалист уточнит ваши данные, цели<br> и
-                      предложит программу питания.</p>
+                      предложит программу питания.
+                    </p>
                   </li>
                   <li data-accordion="element">
-                    <div>
+                    <div class="faq__description-wrapper" data-accordion="button">
                       <h3>Есть ли в центре детская комната?</h3>
-                      <button data-accordion="button">
+                      <button class="faq__button">
+                        <span class="faq__button-wrapper faq__button-wrapper--minus">
+                          <svg width="20" height="2">
+                            <use xlink:href="img/sprite.svg#icon-faq-minus"></use>
+                          </svg>
+                        </span>
+                        <span class="faq__button-wrapper faq__button-wrapper--plus">
+                          <svg width="20" height="20">
+                            <use xlink:href="img/sprite.svg#icon-faq-plus"></use>
+                          </svg>
+                        </span>
                       </button>
                     </div>
                     <p data-accordion="content">Да. Вы можете обратиться как к своему тренеру, так и к нашему
                       нутрициологу. Специалист уточнит ваши данные, цели<br> и
-                      предложит программу питания.</p>
+                      предложит программу питания.
+                    </p>
                   </li>
                 </ul>
               </div>
               <div class="faq__description-text-content" data-tabs="element">
                 <ul data-accordion="parent">
                   <li class="is-active" data-accordion="element">
-                    <div>
+                    <div class="faq__description-wrapper" data-accordion="button">
                       <h3>Есть в фитнес-центре дресс-код?</h3>
-                      <button data-accordion="button">
+                      <button class="faq__button">
+                        <span class="faq__button-wrapper faq__button-wrapper--minus">
+                          <svg width="20" height="2">
+                            <use xlink:href="img/sprite.svg#icon-faq-minus"></use>
+                          </svg>
+                        </span>
+                        <span class="faq__button-wrapper faq__button-wrapper--plus">
+                          <svg width="20" height="20">
+                            <use xlink:href="img/sprite.svg#icon-faq-plus"></use>
+                          </svg>
+                        </span>
                       </button>
                     </div>
                     <p data-accordion="content">Для тренировок необходимо иметь предназначенную для этого закрытую
@@ -756,12 +901,23 @@
                       безопасности,
                       запрещается тренироваться босиком, в пляжных или домашних тапочках и т. п., исключения составляют
                       специальные классы
-                      (например, йога, пилатес).</p>
+                      (например, йога, пилатес).
+                    </p>
                   </li>
                   <li data-accordion="element">
-                    <div>
+                    <div class="faq__description-wrapper" data-accordion="button">
                       <h3>Можно ли приводить с собой детей на тренировки?</h3>
-                      <button data-accordion="button">
+                      <button class="faq__button">
+                        <span class="faq__button-wrapper faq__button-wrapper--minus">
+                          <svg width="20" height="2">
+                            <use xlink:href="img/sprite.svg#icon-faq-minus"></use>
+                          </svg>
+                        </span>
+                        <span class="faq__button-wrapper faq__button-wrapper--plus">
+                          <svg width="20" height="20">
+                            <use xlink:href="img/sprite.svg#icon-faq-plus"></use>
+                          </svg>
+                        </span>
                       </button>
                     </div>
                     <p data-accordion="content">Для тренировок необходимо иметь предназначенную для этого закрытую
@@ -773,12 +929,23 @@
                       безопасности,
                       запрещается тренироваться босиком, в пляжных или домашних тапочках и т. п., исключения составляют
                       специальные классы
-                      (например, йога, пилатес).</p>
+                      (например, йога, пилатес).
+                    </p>
                   </li>
                   <li data-accordion="element">
-                    <div>
+                    <div class="faq__description-wrapper" data-accordion="button">
                       <h3>Какие дополнительные правила посещения центра?</h3>
-                      <button data-accordion="button">
+                      <button class="faq__button">
+                        <span class="faq__button-wrapper faq__button-wrapper--minus">
+                          <svg width="20" height="2">
+                            <use xlink:href="img/sprite.svg#icon-faq-minus"></use>
+                          </svg>
+                        </span>
+                        <span class="faq__button-wrapper faq__button-wrapper--plus">
+                          <svg width="20" height="20">
+                            <use xlink:href="img/sprite.svg#icon-faq-plus"></use>
+                          </svg>
+                        </span>
                       </button>
                     </div>
                     <p data-accordion="content">Для тренировок необходимо иметь предназначенную для этого закрытую
@@ -790,12 +957,23 @@
                       безопасности,
                       запрещается тренироваться босиком, в пляжных или домашних тапочках и т. п., исключения составляют
                       специальные классы
-                      (например, йога, пилатес).</p>
+                      (например, йога, пилатес).
+                    </p>
                   </li>
                   <li data-accordion="element">
-                    <div>
+                    <div class="faq__description-wrapper" data-accordion="button">
                       <h3>Нужна ли медицинская справка для посещения залов и бассейна?</h3>
-                      <button data-accordion="button">
+                      <button class="faq__button">
+                        <span class="faq__button-wrapper faq__button-wrapper--minus">
+                          <svg width="20" height="2">
+                            <use xlink:href="img/sprite.svg#icon-faq-minus"></use>
+                          </svg>
+                        </span>
+                        <span class="faq__button-wrapper faq__button-wrapper--plus">
+                          <svg width="20" height="20">
+                            <use xlink:href="img/sprite.svg#icon-faq-plus"></use>
+                          </svg>
+                        </span>
                       </button>
                     </div>
                     <p data-accordion="content">Для тренировок необходимо иметь предназначенную для этого закрытую
@@ -805,7 +983,8 @@
                       безопасности,
                       запрещается тренироваться босиком, в пляжных или домашних тапочках и т. п., исключения составляют
                       специальные классы
-                      (например, йога, пилатес).</p>
+                      (например, йога, пилатес).
+                    </p>
                   </li>
                 </ul>
               </div>
