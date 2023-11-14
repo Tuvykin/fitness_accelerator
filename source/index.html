@@ -12,6 +12,19 @@
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
   <link rel="manifest" href="manifest.webmanifest">
+  <!-- Шрифты -->
+  <link rel="preload" href="fonts/AlumniSansExtraBold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/AlumniSansSemiBold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/RobotoCondensedBold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/RobotoCondensedLight.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/RobotoCondensedRegular.woff2" as="font" crossorigin="anonymous">
+  <!-- Предзагрузка -->
+  <link rel="preload" href="css/style.min.css" as="style">
+  <link rel="preload" href="js/vendor.min.js" as="script">
+  <link rel="preload" href="js/main.min.js" as="script">
+  <link rel="preload" as="image" imagesrcset="img/hero1x.webp, img/hero2x.webp 2x" media="(min-width: 1366px)">
+  <link rel="preload" as="image" imagesrcset="img/hero-tablet1x.webp, img/hero-tablet2x.webp 2x"
+    media="(min-width: 768px) and (max-width: 1365px)">
 </head>
 
 <body>
@@ -85,13 +98,13 @@
                 width="660" height="401">
             </picture>
           </div>
-          <div class="gym__wrapper-video">
-            <iframe class="gym__iframe" frameborder="0" width="364" height="228"
-              src="https://www.youtube.com/embed/9TZXsZItgdw?si=UbuakXrvJ-3MeEgS" title="YouTube video player"
+          <div class="gym__wrapper-video" data-wrapper-video>
+            <iframe width="364" height="228" src="https://www.youtube.com/embed/9TZXsZItgdw?si=0B9v5wzP4K4sj-55"
+              title="YouTube video player" frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen>
+              allowfullscreen data-gym-iframe>
             </iframe>
-            <div class="gym__container-poster poster">
+            <div class="gym__container-poster poster" data-poster>
               <div class="poster__wrapper">
                 <picture>
                   <source type="image/webp" media="(max-width: 767px)"
@@ -107,8 +120,8 @@
                     alt="Обложка видео тренажерного зала" width="364" height="228">
                 </picture>
               </div>
-              <button class="poster__button" type="button" aria-label="Воспроизвести видео.">
-                <span class="poster__text">
+              <button type="button" aria-label="Воспроизвести видео." data-poster-button>
+                <span>
                   <svg width="100" height="100">
                     <use xlink:href="img/sprite.svg#icon-video"></use>
                   </svg>
@@ -135,7 +148,7 @@
           <ul class="subscription__list cards">
             <li class="cards__item">
               <h3 class="cards__title">С тренером</h3>
-              <p class="cards__description">12 занятий</p>
+              <p class="cards__description cards__description--text">12 занятий</p>
               <div class="cards__wrapper">
                 <span class="cards__text">5000</span>
                 <b class="cards__price">5000</b>
@@ -457,7 +470,7 @@
           <div class="advantages__text-content">
             <h2>Наши преимущества</h2>
             <ul>
-              <li>
+              <li class="advantages__item advantages__item--design">
                 <div>
                   <h3>Площадь</h3>
                   <p>Занимайтесь без очередей<br> и толкучки</p>
@@ -467,7 +480,7 @@
                   <span>кв/м</span>
                 </div>
               </li>
-              <li>
+              <li class="advantages__item advantages__item--design">
                 <div>
                   <h3>Собственная парковка</h3>
                   <p>Вы всегда найдете место для своей<br> машины на нашей парковке</p>
@@ -477,7 +490,14 @@
                   <span>машин</span>
                 </div>
               </li>
-              <li>
+              <li class="advantages__item">
+                <div class="advantages__wrapper">
+                  <b>100</b>
+                  <span>Тренажеров</span>
+                </div>
+                <p>Современные тренажеры на все группы мышц</p>
+              </li>
+              <li class="advantages__item advantages__item--design">
                 <div>
                   <h3>Комфорт</h3>
                   <p>Просторные раздевалки,<br> душевые, фен, Wi-Fi, кулеры</p>
@@ -487,7 +507,7 @@
                   <span>мест</span>
                 </div>
               </li>
-              <li>
+              <li class="advantages__item advantages__item--design">
                 <div>
                   <h3>Тренерский опыт</h3>
                   <p>Добивайтесь своих целей быстрее с профессиональным тренером</p>
@@ -498,13 +518,6 @@
                 </div>
               </li>
             </ul>
-          </div>
-          <div class="advantages__card-text-content">
-            <div>
-              <b>100</b>
-              <span>Тренажеров</span>
-            </div>
-            <p>Современные тренажеры на все группы мышц</p>
           </div>
         </div>
       </section>
@@ -865,19 +878,21 @@
       </section>
       <section class="free-lesson">
         <div class="free-lesson__container container">
-          <div class="free-lesson__wrapper">
-            <h2 class="free-lesson__title">Бесплатное занятие</h2>
-            <form class="free-lesson__form form" action="https://echo.htmlacademy.ru/" method="post" target="_blank">
+          <div class="free-lesson__wrapper form">
+            <h2 class="form__title">Бесплатное занятие</h2>
+            <form action="https://echo.htmlacademy.ru/" method="post" target="_blank">
               <fieldset class="form__wrapper">
                 <legend class="visually-hidden">Представьтесь и укажите контактный телефон</legend>
                 <ul class="form__list">
                   <li class="form__item">
-                    <label class="visually-hidden" for="name">Имя</label>
-                    <input class="form__input" type="text" name="name" placeholder="Имя" id="name" required>
+                    <label>
+                      <input type="text" name="name" placeholder="Имя" required>
+                    </label>
                   </li>
                   <li class="form__item">
-                    <label class="visually-hidden" for="number">Контактный телефон</label>
-                    <input class="form__input" type="tel" name="phone" placeholder="Телефон" id="number" required>
+                    <label>
+                      <input type="tel" name="phone" placeholder="Телефон" required>
+                    </label>
                   </li>
                 </ul>
               </fieldset>

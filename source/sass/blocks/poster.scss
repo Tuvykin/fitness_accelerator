@@ -33,7 +33,7 @@
   }
 }
 
-.poster__button {
+.poster button {
   border: none;
   position: absolute;
   top: 49%;
@@ -54,7 +54,7 @@
   }
 }
 
-.poster__text {
+.poster span {
   border-radius: 50px;
   background: linear-gradient(97deg, #ED0233 17.6%, #003EB7 95.31%);
   width: 72px;
@@ -72,7 +72,7 @@
   }
 }
 
-.poster__text svg {
+.poster svg {
   position: absolute;
   top: -14px;
   left: -14px;
