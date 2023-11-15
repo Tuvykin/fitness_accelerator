@@ -10,7 +10,7 @@
   }
 
   @include vp-767 {
-    gap: 37px;
+    gap: 35px;
     margin-bottom: 70px;
   }
 }
@@ -33,6 +33,7 @@
   @include vp-767 {
     padding: 50px 42px;
     max-width: 290px;
+    gap: 14px;
   }
 
   &--current {
@@ -44,9 +45,9 @@
       padding: 60px 110px;
     }
 
-  @include vp-767 {
-    padding: 43px 35px;
-  }
+    @include vp-767 {
+      padding: 43px 35px;
+    }
   }
 }
 
@@ -119,7 +120,7 @@
   }
 
   @include vp-767 {
-    padding: 0 20px;
+    padding: 1px 20px 9px;
     gap: 10px;
     min-height: 120px;
     min-width: 162px;
@@ -148,7 +149,7 @@
   @include vp-767 {
     font-size: 48px;
     line-height: 72px;
-    padding: 44px 0 4px 15px;
+    padding: 50px 0 0 16px;
   }
 }
 
@@ -165,7 +166,7 @@
 }
 
 .cards__button-text {
-  padding: 25px 42px;
+  padding: 25px 44px;
   display: block;
   width: max-content;
   font-size: 12px;
@@ -176,5 +177,12 @@
 
   @include vp-1365 {
     padding: 20px 42px;
+  }
+
+  &--current {
+
+    @include vp-767 {
+      padding: 22px 44px;
+    }
   }
 }

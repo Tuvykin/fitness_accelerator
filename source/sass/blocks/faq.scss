@@ -76,7 +76,7 @@
 
 .faq__text-content button {
   width: 100%;
-  padding: 17px 48px;
+  padding: 19px 48px 15px;
   border: 1px solid rgba(16, 38, 84, 0.20);
   background-color: transparent;
   border-radius: 0;
@@ -87,7 +87,7 @@
   color: #102654;
 
   @include vp-1365 {
-    padding: 17px 38px;
+    padding: 18px 38px 16px;
   }
 
   @include vp-767 {

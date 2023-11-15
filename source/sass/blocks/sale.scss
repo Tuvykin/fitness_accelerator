@@ -96,7 +96,7 @@
   @include vp-767 {
     max-width: none;
     text-align: center;
-    padding: 45px 50px 50px;
+    padding: 45px 50px 51px;
   }
 }
 
@@ -160,7 +160,7 @@
     background-color: $color-default-white;
 
     @include vp-767 {
-      top: 16px;
+      top: 17px;
       left: 56px;
     }
   }
@@ -243,7 +243,7 @@
   border-image: linear-gradient(to right,rgba(209, 10, 66, 1),rgba(0, 53, 159, 1))1;
 
   @include vp-767 {
-    padding: 38px 53px 37px;
+    padding: 38px 53px;
     text-align: center;
   }
 }
