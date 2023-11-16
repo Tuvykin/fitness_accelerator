@@ -167,7 +167,7 @@
   display: block;
 
   &--current {
-    background: var(--1, linear-gradient(97deg, #ED0233 17.6%, #003EB7 95.31%));
+    background: linear-gradient(97deg, #ED0233 17.6%, #003EB7 95.31%);
     border: none;
   }
 }
