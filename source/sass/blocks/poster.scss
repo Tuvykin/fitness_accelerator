@@ -42,6 +42,7 @@
   background-color: transparent;
   min-height: 100px;
   min-width: 100px;
+  cursor: pointer;
 
   @include vp-1365 {
     min-height: 72px;
