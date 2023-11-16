@@ -18,8 +18,4 @@
   color: $color-default-white;
   font-size: 14px;
   line-height: 22px;
-
-  @include vp-767 {
-    line-height: 20px;
-  }
 }

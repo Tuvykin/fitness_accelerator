@@ -73,6 +73,7 @@
   letter-spacing: 0.6px;
   text-transform: uppercase;
   color: $color-default-white;
+  font-weight: 700;
 
   @include vp-1365 {
     padding: 19px 195px;

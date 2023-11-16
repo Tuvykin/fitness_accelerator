@@ -39,8 +39,9 @@
 
   @include vp-1365 {
     font-size: 42px;
+    font-weight: 700;
     line-height: 42px;
-    letter-spacing: 1.75px;
+    letter-spacing: 1.26px;
     margin-bottom: 41px;
   }
 
@@ -49,6 +50,7 @@
     line-height: 32px;
     letter-spacing: 0.96px;
     margin-bottom: 37px;
+    font-weight: 600;
   }
 }
 
@@ -94,7 +96,7 @@
   }
 }
 
-.contacts__item:nth-last-of-type(2) {
+.contacts__item--reverse {
   grid-column: 2 / 3;
   grid-row: 1 / 2;
 
@@ -130,6 +132,7 @@
   margin: 0;
   display: block;
   min-width: 170px;
+  color: #102654;
 
   @include vp-767 {
     line-height: 20px;
