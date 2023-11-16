@@ -92,7 +92,7 @@
   }
 
   @include vp-767 {
-    padding: 17px 20px 9px;
+    padding: 14px 20px 12px;
     font-size: 16px;
     line-height: 16px;
   }
@@ -146,7 +146,7 @@
     }
 
     @include vp-767 {
-      top: -22px;
+      top: -23px;
     }
   }
 
@@ -176,12 +176,16 @@
     @include vp-1365 {
       padding-bottom: 25px;
     }
+
+    @include vp-767 {
+      padding-bottom: 22px;
+    }
   }
 
   @include vp-767 {
       display: flex;
       flex-direction: column;
-      padding-bottom: 25px;
+      padding-bottom: 22px;
     }
 }
 
@@ -200,6 +204,7 @@
   @include vp-1365 {
     font-size: 22px;
     line-height: 22px;
+    max-width: 500px;
   }
 
   @include vp-767 {
@@ -209,12 +214,14 @@
   }
 }
 
-
-
 .is-active[data-accordion="element"] .faq__description-wrapper {
 
   @include vp-1365 {
     margin-bottom: 2px;
+  }
+
+  @include vp-767 {
+    margin: 0;
   }
 }
 
@@ -269,6 +276,11 @@
   padding: 0;
   width: 40px;
   height: 40px;
+
+  @include vp-767 {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 .faq__button-wrapper {
@@ -280,9 +292,18 @@
   height: 40px;
   transform: translate(-50%, -50%);
 
+  @include vp-767 {
+    width: 30px;
+    height: 30px;
+  }
+
   &--minus {
     background-color: #1C3374;
     right: -20px;
+
+    @include vp-767 {
+      right: -15px;
+    }
   }
 }
 
@@ -299,16 +320,26 @@
   position: absolute;
   top: 18px;
   left: 9px;
+
+  @include vp-767 {
+    width: 14px;
+    top: 13px;
+    left: 7px;
+  }
 }
 
 .faq__button-wrapper--plus svg {
   top: 10px;
+
+  @include vp-767 {
+    top: 4px;
+  }
 }
 
 .faq__description-text-content br {
   display: none;
 
-  @include vp-1365 {
+  @include vp-767 {
     display: block;
   }
 }
