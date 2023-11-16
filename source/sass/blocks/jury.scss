@@ -36,3 +36,53 @@
     margin-bottom: 42px;
   }
 }
+
+.jury__swiper-button {
+  position: absolute;
+  top: 246px;
+  background-color: transparent;
+  border: none;
+  color: $color-default-white;
+  width: 16px;
+  height: 32px;
+  top: 252px;
+
+  &::after {
+    display: none;
+  }
+
+  @include vp-1365 {
+    top: 235px;
+  }
+
+  @include vp-767 {
+    top: 223px;
+    width: 10px;
+    height: 19px;
+  }
+
+  &--prev {
+    left: 46px;
+
+    @include vp-1365 {
+      left: 44px;
+    }
+
+    @include vp-767 {
+      left: 18px;
+    }
+  }
+
+  &--next {
+    right: 47px;
+    transform: rotate(180deg);
+
+    @include vp-1365 {
+      right: 44px;
+    }
+
+    @include vp-767 {
+      right: 18px;
+    }
+  }
+}

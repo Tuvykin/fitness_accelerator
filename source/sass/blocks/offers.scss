@@ -1,12 +1,12 @@
-.sale {
+.offers {
   text-align: center;
 }
 
-.sale__text-content {
+.offers__text-content {
   color: #1C3374;
 }
 
-.sale__text-content h2 {
+.offers__text-content h2 {
   color: #102654;
   font-family: $ff-base;
   font-size: 54px;
@@ -32,7 +32,7 @@
   }
 }
 
-.sale__text-content ul {
+.offers__text-content ul {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
@@ -52,7 +52,7 @@
   }
 }
 
-.sale__text-content li {
+.offers__text-content li {
 
   @include vp-1365 {
     display: flex;
@@ -61,7 +61,7 @@
   }
 }
 
-.sale__text-content li:first-of-type {
+.offers__text-content li:first-of-type {
   grid-row: 1 / 3;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -81,7 +81,7 @@
   }
 }
 
-.sale__wrapper-text-content {
+.offers__wrapper-text-content {
   padding: 45px;
   padding-top: 40px;
   padding-bottom: 50px;
@@ -100,7 +100,7 @@
   }
 }
 
-.sale__wrapper-text-content b {
+.offers__wrapper-text-content b {
   font-size: 70px;
   font-weight: 700;
   line-height: 70px;
@@ -117,8 +117,8 @@
   }
 }
 
-.sale__wrapper-text-content a,
-.sale__text-content a {
+.offers__wrapper-text-content a,
+.offers__text-content a {
   font-size: 14px;
   font-weight: 700;
   line-height: 14px;
@@ -127,7 +127,7 @@
   display: block;
 }
 
-.sale__text-content a {
+.offers__text-content a {
   color: #1C3374;
   position: relative;
 
@@ -153,7 +153,7 @@
   }
 }
 
-.sale__wrapper-text-content a {
+.offers__wrapper-text-content a {
   color: $color-default-white;
 
   &::after {
@@ -166,7 +166,7 @@
   }
 }
 
-.sale__text-content h3 {
+.offers__text-content h3 {
   font-size: 24px;
   font-weight: 700;
   margin: 0;
@@ -184,7 +184,7 @@
   }
 }
 
-.sale__text-content p {
+.offers__text-content p {
   font-weight: 300;
   margin: 0;
   margin-bottom: 67px;
@@ -200,7 +200,7 @@
   }
 }
 
-.sale__wrapper-text-content h3 {
+.offers__wrapper-text-content h3 {
   font-size: 26px;
   font-weight: 700;
   line-height: 26px;
@@ -220,7 +220,7 @@
   }
 }
 
-.sale__wrapper-text-content p {
+.offers__wrapper-text-content p {
   margin: 0;
   font-size: 18px;
   font-weight: 300;
@@ -237,7 +237,7 @@
   }
 }
 
-.sale__text-content li:not(:first-of-type) {
+.offers__text-content li:not(:first-of-type) {
   border: 7px solid;
   padding: 25px 28px 31px;
   border-image: linear-gradient(to right,rgba(209, 10, 66, 1),rgba(0, 53, 159, 1))1;
@@ -248,6 +248,6 @@
   }
 }
 
-.sale__text-content br {
+.offers__text-content br {
   display: none;
 }

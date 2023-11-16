@@ -454,12 +454,12 @@
                 </li>
               </ul>
             </div>
-            <div class="jury-swiper__button jury-swiper__button--prev swiper-button-prev" data-jury-swiper-btn-prev>
+            <div class="jury__swiper-button jury__swiper-button--prev swiper-button-prev" data-jury-swiper-btn-prev>
               <svg width="16" height="32">
                 <use xlink:href="img/sprite.svg#icon-arrow"></use>
               </svg>
             </div>
-            <div class="jury-swiper__button jury-swiper__button--next swiper-button-next" data-jury-swiper-btn-next>
+            <div class="jury__swiper-button jury__swiper-button--next swiper-button-next" data-jury-swiper-btn-next>
               <svg width="16" height="32">
                 <use xlink:href="img/sprite.svg#icon-arrow"></use>
               </svg>
@@ -523,32 +523,34 @@
           </div>
         </div>
       </section>
-      <section class="sale" data-test="offers">
-        <div class="sale__container container">
-          <div class="sale__text-content">
+      <section class="offers" data-test="offers">
+        <div class="offers__container container">
+          <div class="offers__text-content">
             <h2>Акции</h2>
             <ul>
               <li>
-                <div class="sale__wrapper-text-content">
+                <div class="offers__wrapper-text-content">
                   <div>
                     <h3>Год</h3>
                     <b>4999</b>
                     <p>Безлимитный абонемент в тренажерный зал</p>
                   </div>
-                  <a href="#">подробнее</a>
+                  <a href="#">
+                    <span>подробнее</span>
+                  </a>
                 </div>
                 <div>
                   <picture>
                     <source type="image/webp" media="(max-width: 767px)"
-                      srcset="img/sale1x-mobile.webp 1x, img/sale2x-mobile.webp 2x">
+                      srcset="img/offers1x-mobile.webp 1x, img/offers2x-mobile.webp 2x">
                     <source type="image/webp" media="(max-width: 1365px)"
-                      srcset="img/sale1x-tablet.webp 1x, img/sale2x-tablet.webp 2x">
-                    <source type="image/webp" srcset="img/sale1x.webp 1x, img/sale2x.webp 2x">
-                    <source media="(max-width: 767px)" srcset="img/sale1x-mobile.jpg 1x, img/sale2x-mobile.jpg 2x"
+                      srcset="img/offers1x-tablet.webp 1x, img/offers2x-tablet.webp 2x">
+                    <source type="image/webp" srcset="img/offers1x.webp 1x, img/offers2x.webp 2x">
+                    <source media="(max-width: 767px)" srcset="img/offers1x-mobile.jpg 1x, img/offers2x-mobile.jpg 2x"
                       width="290" height="330">
-                    <source media="(max-width: 1365px)" srcset="img/sale1x-tablet.jpg 1x, img/sale2x-tablet.jpg 2x"
+                    <source media="(max-width: 1365px)" srcset="img/offers1x-tablet.jpg 1x, img/offers2x-tablet.jpg 2x"
                       width="399" height="462">
-                    <img src="img/sale1x.jpg" srcset="img/sale2x.jpg 2x" loading="lazy" alt="Фото тренера Анна."
+                    <img src="img/offers1x.jpg" srcset="img/offers2x.jpg 2x" loading="lazy" alt="Фото тренера Анна."
                       width="280" height="462">
                   </picture>
                 </div>
@@ -558,14 +560,18 @@
                   <h3>Месяц бесплатно</h3>
                   <p>Приведи друга, получи<br> абонемент в&#160;подарок</p>
                 </div>
-                <a href="#">подробнее</a>
+                <a href="#">
+                  <span>подробнее</span>
+                </a>
               </li>
               <li>
                 <div>
                   <h3>Скидка 20%</h3>
                   <p>Корпоративный фитнес с командой</p>
                 </div>
-                <a href="#">подробнее</a>
+                <a href="#">
+                  <span>подробнее</span>
+                </a>
               </li>
             </ul>
           </div>
@@ -597,7 +603,7 @@
                   <li class="is-active" data-accordion="element">
                     <div class="faq__description-wrapper" data-accordion="button">
                       <h3>Как стать членом фитнес‑центра?</h3>
-                      <button class="faq__button">
+                      <button class="faq__button" type="button">
                         <span class="faq__button-wrapper faq__button-wrapper--minus">
                           <svg width="20" height="2">
                             <use xlink:href="img/sprite.svg#icon-faq-minus"></use>
@@ -620,7 +626,7 @@
                   <li data-accordion="element">
                     <div class="faq__description-wrapper" data-accordion="button">
                       <h3>Где можно посмотреть расписание?</h3>
-                      <button class="faq__button">
+                      <button class="faq__button" type="button">
                         <span class="faq__button-wrapper faq__button-wrapper--minus">
                           <svg width="20" height="2">
                             <use xlink:href="img/sprite.svg#icon-faq-minus"></use>
@@ -643,7 +649,7 @@
                   <li data-accordion="element">
                     <div class="faq__description-wrapper" data-accordion="button">
                       <h3>Есть кулеры в центре? Предоставляются полотенца?</h3>
-                      <button class="faq__button">
+                      <button class="faq__button" type="button">
                         <span class="faq__button-wrapper faq__button-wrapper--minus">
                           <svg width="20" height="2">
                             <use xlink:href="img/sprite.svg#icon-faq-minus"></use>
@@ -666,7 +672,7 @@
                   <li data-accordion="element">
                     <div class="faq__description-wrapper" data-accordion="button">
                       <h3>Сколько тренеров работает в клубе и какова их&#160;квалификация?</h3>
-                      <button class="faq__button">
+                      <button class="faq__button" type="button">
                         <span class="faq__button-wrapper faq__button-wrapper--minus">
                           <svg width="20" height="2">
                             <use xlink:href="img/sprite.svg#icon-faq-minus"></use>
@@ -693,7 +699,7 @@
                   <li class="is-active" data-accordion="element">
                     <div class="faq__description-wrapper" data-accordion="button">
                       <h3>Занятия с тренером входят в абонемент?</h3>
-                      <button class="faq__button">
+                      <button class="faq__button" type="button">
                         <span class="faq__button-wrapper faq__button-wrapper--minus">
                           <svg width="20" height="2">
                             <use xlink:href="img/sprite.svg#icon-faq-minus"></use>
@@ -718,7 +724,7 @@
                   <li data-accordion="element">
                     <div class="faq__description-wrapper" data-accordion="button">
                       <h3>Можно ли заморозить абонемент?</h3>
-                      <button class="faq__button">
+                      <button class="faq__button" type="button">
                         <span class="faq__button-wrapper faq__button-wrapper--minus">
                           <svg width="20" height="2">
                             <use xlink:href="img/sprite.svg#icon-faq-minus"></use>
@@ -742,7 +748,7 @@
                   <li data-accordion="element">
                     <div class="faq__description-wrapper" data-accordion="button">
                       <h3>Есть ли лимит по посещениям тренажерного зала и групповых занятий?</h3>
-                      <button class="faq__button">
+                      <button class="faq__button" type="button">
                         <span class="faq__button-wrapper faq__button-wrapper--minus">
                           <svg width="20" height="2">
                             <use xlink:href="img/sprite.svg#icon-faq-minus"></use>
@@ -766,7 +772,7 @@
                   <li data-accordion="element">
                     <div class="faq__description-wrapper" data-accordion="button">
                       <h3>Что такое семейный доступ и доступ для друзей?</h3>
-                      <button class="faq__button">
+                      <button class="faq__button" type="button">
                         <span class="faq__button-wrapper faq__button-wrapper--minus">
                           <svg width="20" height="2">
                             <use xlink:href="img/sprite.svg#icon-faq-minus"></use>
@@ -794,7 +800,7 @@
                   <li class="is-active" data-accordion="element">
                     <div class="faq__description-wrapper" data-accordion="button">
                       <h3>Предлагает ли клуб услуги по консультированию по вопросам питания?</h3>
-                      <button class="faq__button">
+                      <button class="faq__button" type="button">
                         <span class="faq__button-wrapper faq__button-wrapper--minus">
                           <svg width="20" height="2">
                             <use xlink:href="img/sprite.svg#icon-faq-minus"></use>
@@ -815,7 +821,7 @@
                   <li data-accordion="element">
                     <div class="faq__description-wrapper" data-accordion="button">
                       <h3>Проводятся ли в клубе какие-либо мероприятия или соревнования?</h3>
-                      <button class="faq__button">
+                      <button class="faq__button" type="button">
                         <span class="faq__button-wrapper faq__button-wrapper--minus">
                           <svg width="20" height="2">
                             <use xlink:href="img/sprite.svg#icon-faq-minus"></use>
@@ -836,7 +842,7 @@
                   <li data-accordion="element">
                     <div class="faq__description-wrapper" data-accordion="button">
                       <h3>Можно ли приобрести в центре спортивное питание?</h3>
-                      <button class="faq__button">
+                      <button class="faq__button" type="button">
                         <span class="faq__button-wrapper faq__button-wrapper--minus">
                           <svg width="20" height="2">
                             <use xlink:href="img/sprite.svg#icon-faq-minus"></use>
@@ -857,7 +863,7 @@
                   <li data-accordion="element">
                     <div class="faq__description-wrapper" data-accordion="button">
                       <h3>Есть ли в центре детская комната?</h3>
-                      <button class="faq__button">
+                      <button class="faq__button" type="button">
                         <span class="faq__button-wrapper faq__button-wrapper--minus">
                           <svg width="20" height="2">
                             <use xlink:href="img/sprite.svg#icon-faq-minus"></use>
@@ -882,7 +888,7 @@
                   <li class="is-active" data-accordion="element">
                     <div class="faq__description-wrapper" data-accordion="button">
                       <h3>Есть в фитнес-центре дресс-код?</h3>
-                      <button class="faq__button">
+                      <button class="faq__button" type="button">
                         <span class="faq__button-wrapper faq__button-wrapper--minus">
                           <svg width="20" height="2">
                             <use xlink:href="img/sprite.svg#icon-faq-minus"></use>
@@ -910,7 +916,7 @@
                   <li data-accordion="element">
                     <div class="faq__description-wrapper" data-accordion="button">
                       <h3>Можно ли приводить с собой детей на тренировки?</h3>
-                      <button class="faq__button">
+                      <button class="faq__button" type="button">
                         <span class="faq__button-wrapper faq__button-wrapper--minus">
                           <svg width="20" height="2">
                             <use xlink:href="img/sprite.svg#icon-faq-minus"></use>
@@ -938,7 +944,7 @@
                   <li data-accordion="element">
                     <div class="faq__description-wrapper" data-accordion="button">
                       <h3>Какие дополнительные правила посещения центра?</h3>
-                      <button class="faq__button">
+                      <button class="faq__button" type="button">
                         <span class="faq__button-wrapper faq__button-wrapper--minus">
                           <svg width="20" height="2">
                             <use xlink:href="img/sprite.svg#icon-faq-minus"></use>
@@ -966,7 +972,7 @@
                   <li data-accordion="element">
                     <div class="faq__description-wrapper" data-accordion="button">
                       <h3>Нужна ли медицинская справка для посещения залов и бассейна?</h3>
-                      <button class="faq__button">
+                      <button class="faq__button" type="button">
                         <span class="faq__button-wrapper faq__button-wrapper--minus">
                           <svg width="20" height="2">
                             <use xlink:href="img/sprite.svg#icon-faq-minus"></use>
@@ -1111,7 +1117,7 @@
           <img src="img/svg/icon-supergym.svg" alt="Логотип SUPERGYM" width="109" height="24">
         </a>
         <ul class="main-footer__list nav-list">
-          <li class="nav-listnav-list__item">
+          <li class="nav-list__item">
             <a class="nav-list__link" href="#">Услуги</a>
           </li>
           <li class="nav-list__item">
@@ -1129,7 +1135,7 @@
         </ul>
         <ul class="main-footer__list social-list">
           <li class="social-list__item">
-            <a class="socila-list__link" href="#">
+            <a class="social-list__link" href="#">
               <span class="visually-hidden">Вконтакте</span>
               <svg width="25" height="25">
                 <use xlink:href="img/sprite.svg#icon-vk"></use>
@@ -1137,7 +1143,7 @@
             </a>
           </li>
           <li class="social-list__item">
-            <a class="socila-list__link" href="#">
+            <a class="social-list__link" href="#">
               <span class="visually-hidden">Одноклассники</span>
               <svg width="25" height="25">
                 <use xlink:href="img/sprite.svg#icon-ok"></use>
@@ -1145,7 +1151,7 @@
             </a>
           </li>
           <li class="social-list__item">
-            <a class="socila-list__link" href="#">
+            <a class="social-list__link" href="#">
               <span class="visually-hidden">Reddit</span>
               <svg width="25" height="25">
                 <use xlink:href="img/sprite.svg#icon-reddit"></use>
