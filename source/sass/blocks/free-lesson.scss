@@ -12,7 +12,7 @@
 .free-lesson__wrapper {
   padding: 60px 103px;
   padding-right: 170px;
-  background-color: #102654;
+  background-color: $color-base;
   color: $color-default-white;
 
   @include vp-1365 {

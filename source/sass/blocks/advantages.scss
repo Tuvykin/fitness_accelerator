@@ -1,6 +1,6 @@
 .advantages {
-  background-color: #F8F9FC;
-  color: #102654;
+  background-color: $color-ghost-white;
+  color: $color-base;
   text-align: center;
   position: relative;
 }
@@ -98,7 +98,7 @@
     grid-column: 2 / 3;
     grid-row: 1 / 3;
     flex-direction: column;
-    background-color: #1C3374;
+    background-color: $color-base;
     padding: 70px 34px 79px;
     align-items: center;
     color: $color-default-white;
@@ -168,7 +168,7 @@
 }
 
 .advantages__item--design b {
-  background: linear-gradient(128deg, #D10A42 0%, #0041CA 45.58%);
+  background: $advantages-gradient;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

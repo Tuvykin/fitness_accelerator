@@ -9,7 +9,7 @@
 
 .games__wrapper-description {
   padding: 80px;
-  background-color: #ed0233;
+  background-color: $color-torch-red-banner;
   color: $color-default-white;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -220,20 +220,16 @@
 
 .games__link {
   grid-column: 1 / -1;
-  color: $color-default-white;
   text-align: center;
   font-size: 12px;
-  font-weight: 700;
   line-height: 12px;
   letter-spacing: 0.6px;
-  text-transform: uppercase;
   border: 2px solid $color-default-white;
   max-height: 66px;
   padding: 25px 54px;
 
   @include vp-1365 {
     padding: 20px 40px;
-    font-weight: 700
   }
 }
 

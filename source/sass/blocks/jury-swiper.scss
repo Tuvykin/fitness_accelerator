@@ -53,6 +53,10 @@
   position: absolute;
   top: 0;
   padding: 75px 0 50px;
+
+  @include vp-767 {
+    padding-bottom: 0;
+  }
 }
 
 .jury-swiper__item:hover .jury-swiper__title {
@@ -67,6 +71,10 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
+
+  @include vp-767 {
+    padding: 34px;
+  }
 }
 
 .jury-swiper__text-card {

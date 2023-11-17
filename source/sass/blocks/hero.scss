@@ -1,5 +1,5 @@
 .hero {
-  background: linear-gradient(90deg, #1c3477 0%, #1c3477 0.01%, #1a3578 39.11%, #73184b 75.5%, #b4022a 100%);
+  background: $hero-background;
   color: $color-default-white;
 }
 
@@ -115,37 +115,16 @@
 }
 
 .hero__subtitle {
-  font-family: $ff-base;
-  font-size: 54px;
-  font-weight: 600;
-  line-height: 54px;
-  letter-spacing: 1.62px;
   margin: 0;
   text-transform: uppercase;
-
-  @include vp-1365 {
-    font-size: 42px;
-    line-height: 42px;
-    letter-spacing: 1.26px;
-  }
-
-  @include vp-767 {
-    font-size: 32px;
-    line-height: 32px;
-    letter-spacing: 0.96px;
-  }
 }
 
 .hero__button {
   padding: 25px 54px;
   border: 2px solid $color-default-white;
-  background-color: transparent;
   font-size: 12px;
-  font-weight: 700;
   line-height: 12px;
   letter-spacing: 0.6px;
-  text-transform: uppercase;
-  color: $color-default-white;
   max-width: 230px;
   grid-column: 2 / -1;
   justify-self: end;

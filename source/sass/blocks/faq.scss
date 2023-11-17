@@ -1,6 +1,6 @@
 .faq {
-  color: #102654;
-  background-color: #F8F9FC;
+  color: $color-base;
+  background-color: $color-ghost-white;
 }
 
 .faq__wrapper {
@@ -85,7 +85,7 @@
   font-size: 18px;
   font-weight: 400;
   line-height: 18px;
-  color: #102654;
+  color: $color-base;
 
   @include vp-1365 {
     padding: 18px 38px 16px;
@@ -99,7 +99,7 @@
 }
 
 .faq__text-content .is-active {
-  background: linear-gradient(97deg, #ED0233 17.6%, #003EB7 95.31%);
+  background: $gradient-primary;
   color: $color-default-white;
 }
 
@@ -271,9 +271,6 @@
 
 .faq__button {
   position: relative;
-  background-color: transparent;
-  border: none;
-  padding: 0;
   width: 40px;
   height: 40px;
 
@@ -285,8 +282,10 @@
 
 .faq__button-wrapper {
   position: absolute;
+  top: 20px;
+  right: -20px;
   background-color: transparent;
-  border: 1px solid #1C3374;
+  border: 1px solid $color-resolution-blue;
   border-radius: 20px;
   width: 40px;
   height: 40px;
@@ -298,8 +297,7 @@
   }
 
   &--minus {
-    background-color: #1C3374;
-    right: -20px;
+    background-color: $color-resolution-blue;
 
     @include vp-767 {
       right: -15px;
