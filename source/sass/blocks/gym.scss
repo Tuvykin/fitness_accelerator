@@ -112,9 +112,8 @@
   }
 
   @include vp-767 {
-    position: static;
-    transform: none;
     max-height: 167px;
+    bottom: -13px;
   }
 }
 
@@ -139,5 +138,12 @@
 
   @include vp-767 {
     display: block;
+  }
+}
+
+.gym__container-image {
+
+  @include vp-767 {
+    margin-bottom: 207px;
   }
 }

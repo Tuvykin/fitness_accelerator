@@ -31,6 +31,7 @@
 .contacts__title {
   margin: 0;
   margin-bottom: 40px;
+  font-weight: 600;
 
   @include vp-1365 {
     font-weight: 700;
