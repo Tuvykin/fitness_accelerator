@@ -97,6 +97,7 @@
     max-width: none;
     text-align: center;
     padding: 45px 50px 51px;
+    align-items: center;
   }
 }
 
@@ -143,12 +144,11 @@
     left: 0;
 
     @include vp-1365 {
-      top: 16px;
+      top: 18px;
     }
 
     @include vp-767 {
-      top: 17px;
-      left: 46px;
+      top: 18px;
     }
   }
 }
@@ -159,23 +159,28 @@
   &::after {
     background-color: $color-default-white;
 
+    @include vp-1365 {
+      top: 16px;
+    }
+
     @include vp-767 {
-      top: 17px;
-      left: 56px;
+      top: 18px;
     }
   }
 }
 
 .offers__text-content h3 {
-  font-size: 24px;
+  font-size: 26px;
   font-weight: 700;
+  line-height: 26px;
   margin: 0;
-  margin-bottom: 12px;
-  letter-spacing: 1px;
+  margin-bottom: 10px;
+  letter-spacing: normal;
 
   @include vp-1365 {
-    letter-spacing: 0;
     margin-bottom: 10px;
+    font-size: 24px;
+    line-height: 24px;
   }
 
   @include vp-767 {
@@ -239,12 +244,13 @@
 
 .offers__text-content li:not(:first-of-type) {
   border: 7px solid;
-  padding: 25px 28px 31px;
+  padding: 23px 28px 33px;
   border-image: linear-gradient(to right,rgba(209, 10, 66, 1),rgba(0, 53, 159, 1))1;
 
   @include vp-767 {
     padding: 38px 53px;
     text-align: center;
+    align-items: center;
   }
 }
 
