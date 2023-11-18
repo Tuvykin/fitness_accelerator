@@ -30,6 +30,37 @@
   font-weight: 700;
   line-height: 26px;
 
+  @include hover-focus {
+    opacity: 0.6;
+  }
+
+  @include active {
+    opacity: 0.3;
+  }
+
+  &--phone {
+    border-bottom: 2px solid $color-transparent;
+    padding: 28px 0;
+
+    @include hover-focus {
+      color: $color-resolution-blue;
+      outline: none;
+    }
+
+    @include active {
+      color: $color-base;
+      border-bottom: 2px solid $color-base;
+    }
+
+    &:disabled,
+    &--disabled {
+      color: $color-ghost-white;
+      opacity: 0.5;
+      border-bottom: 2px solid transparent;
+      pointer-events: none;
+    }
+  }
+
   @include vp-1365 {
     font-size: 24px;
     line-height: 24px;
