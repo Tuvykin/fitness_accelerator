@@ -18,6 +18,8 @@
   gap: 38px;
   position: absolute;
   z-index: 1;
+  left: 50%;
+  transform: translate(-50%);
 
   @include vp-1365 {
     display: block;

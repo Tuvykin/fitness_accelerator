@@ -1,3 +1,21 @@
+.form {
+  background-color: $color-base;
+}
+
+.form__container {
+  padding: 60px 103px;
+  padding-right: 170px;
+  color: $color-default-white;
+
+  @include vp-1365 {
+    padding: 100px 133px;
+  }
+
+  @include vp-767 {
+    padding: 70px 15px;
+  }
+}
+
 .form__title {
   margin: 0;
   margin-bottom: 33px;
@@ -23,6 +41,7 @@
   list-style-type: none;
   display: flex;
   gap: 30px;
+  justify-content: space-between;
   margin-bottom: 38px;
 
   @include vp-1365 {
@@ -69,7 +88,7 @@
 }
 
 .form__item input {
-  background-color: transparent;
+  background-color: $color-transparent;
   margin: 0;
   padding: 0;
   border: none;

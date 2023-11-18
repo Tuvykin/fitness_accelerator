@@ -1,5 +1,5 @@
 import {iosVhFix} from './utils/ios-vh-fix';
-// import {Form} from './modules/form-validate/form';
+import {Form} from './modules/form-validate/form';
 import {setGymVideo} from './modules/gym-video';
 import {setSubscription} from './modules/cards';
 import {initJurySlider} from './modules/jury-swiper';
