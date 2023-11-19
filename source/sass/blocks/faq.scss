@@ -313,17 +313,20 @@
     }
   }
 
-  // @include active {
-  //   color: $color-base;
-  //   background-color: $color-default-white;
-  // }
+  @include active {
 
-  // &:disabled,
-  // &--disabled {
-  //   color: $color-default-white;
-  //   opacity: 0.5;
-  //   pointer-events: none;
-  // }
+    .faq__button-wrapper {
+      opacity: 0.6;
+    }
+  }
+
+  &:disabled,
+  &--disabled {
+
+    .faq__button-wrapper {
+      opacity: 0.3;
+    }
+  }
 }
 
 .faq__button-wrapper {

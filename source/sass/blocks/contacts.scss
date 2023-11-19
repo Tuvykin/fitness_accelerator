@@ -142,3 +142,22 @@
     line-height: 20px;
   }
 }
+
+.contacts__link {
+
+  @include hover-focus {
+    color: $color-accent;
+    outline: none;
+  }
+
+  @include active {
+    color: $color-base;
+  }
+
+  &:disabled,
+  &--disabled {
+    color: $color-default-white;
+    opacity: 0.5;
+    pointer-events: none;
+  }
+}
