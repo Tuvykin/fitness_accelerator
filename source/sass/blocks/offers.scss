@@ -150,6 +150,10 @@
         display: block;
         border-color: $color-base;
       }
+
+      &::after {
+        display: none;
+      }
     }
   }
 

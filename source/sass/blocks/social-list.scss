@@ -7,3 +7,48 @@
     padding: 53px 0 38px;
   }
 }
+
+.social-list__link {
+  width: 25px;
+  height: 25px;
+  display: block;
+  color: $color-black-russian;
+  background-color: $color-default-white;
+  border-radius: 50%;
+  position: relative;
+
+  @include hover-focus {
+    outline: none;
+    background-color: $color-accent;
+
+    svg {
+      color: $color-default-white;
+    }
+  }
+
+  @include active {
+    outline: none;
+    background-color: $color-base;
+
+    svg {
+      color: $color-default-white;
+    }
+  }
+
+  &:disabled,
+  &--disabled {
+    opacity: 0.3;
+    pointer-events: none;
+
+    svg {
+      color: $color-black-russian;
+    }
+  }
+}
+
+.social-list__link svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

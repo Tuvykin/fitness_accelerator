@@ -18,47 +18,29 @@
   color: $color-default-white;
   font-size: 14px;
   line-height: 22px;
-
-  &::after {
-    content: "";
-    width: 100%;
-    width: 99px;
-    height: 34px;
-    border: 1px solid $color-default-white;
-    position: absolute;
-    top: -10px;
-    left: -10px;
-    display: none;
-  }
+  position: relative;
+  border: 1px solid $color-transparent;
+  padding: 5px 10px;
+  border-radius: 0;
 
   @include hover {
-    opacity: 0.8;
-
-    &::after {
-      display: block;
-    }
+    border-bottom: 1px solid $color-default-white;
+    padding: 5px 0;
+    margin: 0 10px;
   }
 
-  // @include focus {
-  //   outline: none;
+  @include focus {
+    outline: none;
+    border: 1px solid $color-default-white;
+  }
 
-  //   &::before {
-  //     display: block;
-  //     border-color: $color-base;
-  //   }
+  @include active {
+    border-color: $color-transparent;
+  }
 
-  //   &::after {
-  //     display: none;
-  //   }
-  // }
-
-  // @include active {
-  //   opacity: 1;
-  // }
-
-  // &:disabled,
-  // &--disabled {
-  //   opacity: 0.3;
-  //   pointer-events: none;
-  // }
+  &:disabled,
+  &--disabled {
+    opacity: 0.4;
+    pointer-events: none;
+  }
 }

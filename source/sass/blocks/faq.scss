@@ -298,6 +298,7 @@
   }
 
   @include hover-focus {
+    outline: none;
 
     .faq__button-wrapper {
 
