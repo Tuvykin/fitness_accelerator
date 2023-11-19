@@ -5,7 +5,7 @@ const baseSuccessCallback = (event) => {
 };
 
 const baseErrorCallback = (event) => {
-  event.target.submit();
+  event.preventDefault();
   // Данный коллбек используется при необходимости выполнить какое-либо действие помимо показа ошибок при попытке отправить неккорректные данные, он не связан с запросами на сервер
 };
 
