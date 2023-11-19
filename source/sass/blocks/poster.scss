@@ -53,6 +53,7 @@
   }
 
   @include hover-focus {
+    outline: none;
 
     .poster__wrapper-button {
       background: $color-default-white;

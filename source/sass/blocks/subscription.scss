@@ -149,6 +149,7 @@
 
   @include hover-focus {
     color: $color-base;
+    outline: none;
 
     &::after {
       background-color: $color-torch-red-banner;

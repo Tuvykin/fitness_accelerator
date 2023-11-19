@@ -231,6 +231,24 @@
   @include vp-1365 {
     padding: 20px 40px;
   }
+
+  @include hover-focus {
+    color: $color-accent;
+    background-color: $color-default-white;
+    outline: none;
+  }
+
+  @include active {
+    color: $color-base;
+    background-color: $color-default-white;
+  }
+
+  &:disabled,
+  &--disabled {
+    color: $color-default-white;
+    opacity: 0.5;
+    pointer-events: none;
+  }
 }
 
 .games__description br {
