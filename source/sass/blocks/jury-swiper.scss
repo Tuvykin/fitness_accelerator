@@ -7,6 +7,7 @@
 
 .jury-swiper__item {
   max-width: 260px;
+  cursor: pointer;
 
   @include vp-1365 {
     min-width: 268px;

@@ -23,6 +23,7 @@
   background-color: $color-default-white;
   max-width: 360px;
   position: relative;
+  cursor: pointer;
 
   @include vp-1365 {
     display: flex;

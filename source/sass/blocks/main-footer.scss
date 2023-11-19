@@ -27,7 +27,7 @@
   }
 
   @include vp-767 {
-    padding: 0 15px;
+    padding: 0 5px 7px;
     flex-direction: column;
     min-height: auto;
   }
@@ -36,6 +36,7 @@
 .main-footer__link {
   padding: 40px 0;
   margin-right: 244px;
+  cursor: pointer;
 
   @include vp-1365 {
     margin-right: 33px;
@@ -44,6 +45,7 @@
   @include vp-767 {
     margin-right: auto;
     padding: 29px 0;
+    margin-left: 10px;
   }
 
   @include hover-focus {
