@@ -131,38 +131,7 @@
 .offers__text-content a {
   color: $color-resolution-blue;
   position: relative;
-
-  &::after {
-    content: "";
-    display: block;
-    width: 100%;
-    max-width: 79px;
-    height: 1px;
-    background-color: $color-resolution-blue;
-    position: absolute;
-    top: 17px;
-    left: 0;
-
-    @include vp-1365 {
-      top: 18px;
-    }
-
-    @include vp-767 {
-      top: 18px;
-    }
-  }
-
-  &::before {
-    content: "";
-    width: 100%;
-    width: 99px;
-    height: 34px;
-    border: 1px solid $color-default-white;
-    position: absolute;
-    top: -10px;
-    left: -10px;
-    display: none;
-  }
+  width: min-content;
 
   @include hover {
     opacity: 0.8;
@@ -171,13 +140,16 @@
   @include focus {
     outline: none;
 
-    &::before {
-      display: block;
-      border-color: $color-base;
-    }
-
     &::after {
       display: none;
+    }
+
+    span {
+
+      &::before {
+        display: block;
+        border-color: $color-base;
+      }
     }
   }
 
@@ -195,24 +167,15 @@
 .offers__wrapper-text-content a {
   color: $color-default-white;
 
-  &::after {
-    background-color: $color-default-white;
-
-    @include vp-1365 {
-      top: 16px;
-    }
-
-    @include vp-767 {
-      top: 18px;
-    }
-  }
-
   @include focus {
     outline: none;
 
-    &::before {
-      display: block;
-      border-color: $color-default-white;
+    span {
+
+      &::before {
+        display: block;
+        border-color: $color-default-white;
+      }
     }
   }
 }
@@ -305,4 +268,53 @@
 
 .offers__text-content br {
   display: none;
+}
+
+.offers__text-content span {
+
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: $color-resolution-blue;
+    position: absolute;
+    top: 17px;
+    left: 0;
+
+    @include vp-1365 {
+      top: 18px;
+    }
+
+    @include vp-767 {
+      top: 18px;
+    }
+  }
+
+  &::before {
+    content: "";
+    width: 100%;
+    min-width: 99px;
+    min-height: 34px;
+    border: 1px solid $color-default-white;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    display: none;
+  }
+}
+
+.offers__wrapper-text-content span {
+
+  &::after {
+    background-color: $color-default-white;
+
+    @include vp-1365 {
+      top: 16px;
+    }
+
+    @include vp-767 {
+      top: 18px;
+    }
+  }
 }

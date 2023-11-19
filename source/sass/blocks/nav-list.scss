@@ -18,4 +18,47 @@
   color: $color-default-white;
   font-size: 14px;
   line-height: 22px;
+
+  &::after {
+    content: "";
+    width: 100%;
+    width: 99px;
+    height: 34px;
+    border: 1px solid $color-default-white;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    display: none;
+  }
+
+  @include hover {
+    opacity: 0.8;
+
+    &::after {
+      display: block;
+    }
+  }
+
+  // @include focus {
+  //   outline: none;
+
+  //   &::before {
+  //     display: block;
+  //     border-color: $color-base;
+  //   }
+
+  //   &::after {
+  //     display: none;
+  //   }
+  // }
+
+  // @include active {
+  //   opacity: 1;
+  // }
+
+  // &:disabled,
+  // &--disabled {
+  //   opacity: 0.3;
+  //   pointer-events: none;
+  // }
 }
