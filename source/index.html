@@ -35,7 +35,7 @@
           <a class="main-header__link">
             <img src="img/svg/icon-supergym.svg" alt="Логотип SUPERGYM" width="120" height="26">
           </a>
-          <a class="main-header__link main-header__link--phone" href="tel:+78005555555">8-800-555-55-55</a>
+          <a class="main-header__link-phone" href="tel:+78005555555">8-800-555-55-55</a>
         </div>
       </header>
       <section class="hero">
@@ -121,8 +121,8 @@
                     alt="Обложка видео тренажерного зала" width="364" height="228">
                 </picture>
               </div>
-              <button type="button" aria-label="Воспроизвести видео." data-poster-button>
-                <span>
+              <button class="poster__button" type="button" aria-label="Воспроизвести видео." data-poster-button>
+                <span class="poster__wrapper-button">
                   <svg width="100" height="100">
                     <use xlink:href="img/sprite.svg#icon-video"></use>
                   </svg>
@@ -1070,25 +1070,37 @@
         <section class="form">
           <div class="form__container container">
             <h2 class="form__title title">Бесплатное занятие</h2>
-
-            <form action="https://echo.htmlacademy.ru/" method="post" target="_blank">
-              <fieldset class="form__wrapper">
-                <legend class="visually-hidden">Представьтесь и укажите контактный телефон</legend>
-                <ul class="form__list">
-                  <li class="form__item">
-                    <label>
-                      <input type="text" name="name" placeholder="Имя" required>
-                    </label>
-                  </li>
-                  <li class="form__item">
-                    <label>
-                      <input type="tel" name="phone" placeholder="Телефон" required>
-                    </label>
-                  </li>
-                </ul>
-              </fieldset>
-              <button class="form__button btn" type="submit">Отправить</button>
-            </form>
+            <div data-form-validate>
+              <form action="https://echo.htmlacademy.ru/" method="post" target="_blank">
+                <fieldset class="form__wrapper">
+                  <legend class="visually-hidden">Представьтесь и укажите контактный телефон</legend>
+                  <ul class="form__list">
+                    <li class="form__item">
+                      <div class="form__input custom-input" data-validate-type="text" data-limitation="name"
+                        data-message-base="Поле обязательно к заполнению"
+                        data-message-extra="Проверьте корректность заполнения поля" data-required="">
+                        <label>
+                          <input type="text" name="name" placeholder="Имя" required>
+                          <span class="visually-hidden">Имя</span>
+                        </label>
+                      </div>
+                    </li>
+                    <li class="form__item">
+                      <div class="form__input custom-input" data-validate-type="phone" data-on-input-validate=""
+                        data-message-base="Поле обязательно к заполнению"
+                        data-message-extra="Проверьте корректность заполнения поля"
+                        data-message-success="Поле заполнено верно" data-required="" data-phone-length="18">
+                        <label>
+                          <input type="tel" name="phone" placeholder="Телефон" required>
+                          <span class="visually-hidden">Телефон</span>
+                        </label>
+                      </div>
+                    </li>
+                  </ul>
+                </fieldset>
+                <button class="form__button btn" type="submit">Отправить</button>
+              </form>
+            </div>
           </div>
         </section>
         <section class="contacts">

@@ -29,7 +29,7 @@
   }
 }
 
-.poster button {
+.poster__button {
   border: none;
   position: absolute;
   top: 49%;
@@ -39,6 +39,8 @@
   min-height: 100px;
   min-width: 100px;
   cursor: pointer;
+  padding: 0;
+  border-radius: 50%;
 
   @include vp-1365 {
     min-height: 72px;
@@ -49,9 +51,41 @@
   @include vp-767 {
     top: 83px;
   }
+
+  @include hover-focus {
+
+    .poster__wrapper-button {
+      background: $color-default-white;
+      color: $color-base;
+
+      &::after {
+        border-color: $color-base;
+        opacity: 1;
+      }
+    }
+  }
+
+  @include active {
+
+    .poster__wrapper-button {
+      background: $color-default-white;
+      color: $color-base;
+
+      &::after {
+        border-color: $color-base;
+        opacity: 1;
+      }
+    }
+  }
+
+  &:disabled,
+  &--disabled {
+    opacity: 0.4;
+    pointer-events: none;
+  }
 }
 
-.poster span {
+.poster__wrapper-button {
   border-radius: 50px;
   background: $gradient-primary;
   width: 72px;
@@ -60,6 +94,27 @@
   position: absolute;
   top: 13px;
   left: 14px;
+  color: $color-default-white;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid $color-torch-red-banner;
+    opacity: 0.2;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+
+    @include vp-1365 {
+      width: 72px;
+      height: 72px;
+    }
+  }
 
   @include vp-1365 {
     width: 52px;
@@ -69,9 +124,9 @@
   }
 }
 
-.poster svg {
+.poster__wrapper-button svg {
   position: absolute;
-  top: -14px;
+  top: -12px;
   left: -14px;
 
   @include vp-1365 {
