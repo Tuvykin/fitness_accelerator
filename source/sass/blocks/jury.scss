@@ -29,14 +29,26 @@
 .jury__swiper-button {
   position: absolute;
   top: 246px;
-  background-color: transparent;
+  background-color: $color-transparent;
   border: none;
-  color: $color-default-white;
   width: 16px;
   height: 32px;
-  top: 252px;
+  top: 254px;
+  color: $color-base;
 
   &::after {
+    display: none;
+  }
+
+  &::before {
+    content: '';
+    width: 58px;
+    height: 58px;
+    border: 1px solid $color-base;
+    border-radius: 50%;
+    position: absolute;
+    top: -12px;
+    left: -19px;
     display: none;
   }
 
@@ -48,6 +60,30 @@
     top: 223px;
     width: 10px;
     height: 19px;
+  }
+
+  @include hover-focus {
+    outline: none;
+
+    &::before {
+      display: block;
+    }
+  }
+
+  @include active {
+    color: $color-default-white;
+
+    &::before {
+      display: block;
+      background-color: $color-base;
+      z-index: -1;
+    }
+  }
+
+  &:disabled,
+  &--disabled {
+    opacity: 0.3;
+    pointer-events: none;
   }
 
   &--prev {
