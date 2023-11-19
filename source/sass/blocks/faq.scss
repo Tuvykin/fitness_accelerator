@@ -296,6 +296,34 @@
     width: 30px;
     height: 30px;
   }
+
+  @include hover-focus {
+
+    .faq__button-wrapper {
+
+      &--plus {
+        background-color: $color-resolution-blue;
+        color: $color-default-white;
+      }
+
+      &--minus {
+        background-color: $color-default-white;
+        color: $color-resolution-blue;
+      }
+    }
+  }
+
+  // @include active {
+  //   color: $color-base;
+  //   background-color: $color-default-white;
+  // }
+
+  // &:disabled,
+  // &--disabled {
+  //   color: $color-default-white;
+  //   opacity: 0.5;
+  //   pointer-events: none;
+  // }
 }
 
 .faq__button-wrapper {
@@ -316,10 +344,15 @@
 
   &--minus {
     background-color: $color-resolution-blue;
+    color: $color-default-white;
 
     @include vp-767 {
       right: -15px;
     }
+  }
+
+  &--plus {
+    color: $color-resolution-blue;
   }
 }
 
